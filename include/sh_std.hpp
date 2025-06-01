@@ -1,0 +1,31 @@
+// Aliases for selected std:: types/functions inside the 'sh' namespace
+
+#pragma once
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+#include <memory>
+#include <functional>
+#include <sstream>
+#include <fstream>
+
+namespace sh {
+    using std::string;
+    using std::vector;
+    using std::map;
+    using std::shared_ptr;
+    using std::make_shared;
+    using std::unique_ptr;
+    using std::function;
+    using std::ostringstream;
+    using std::istringstream;
+
+    using std::cin;
+    using std::cout;
+    using std::cerr;
+    using std::endl;
+    using std::ifstream;
+    using std::ofstream;
+}
