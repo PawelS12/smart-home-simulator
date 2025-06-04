@@ -9,12 +9,14 @@ Environment::Environment() : temperature(22.0f), hour(12) {}
 static std::uniform_real_distribution<float> tempDist(-0.5f, 0.5f);
 static std::uniform_real_distribution<float> humidityDist(-5.0f, 5.0f);
 static std::uniform_int_distribution<int> movementDist{0, 99};
+static std::uniform_real_distribution<float> pollutionDist(-10.0f, 10.0f);
 
 void Environment::simulation() {
     time_sim();
     temperature_sim();
     brightness_sim();
     humidity_sim();
+    pollution_sim();
 }
 
 bool Environment::isDayTime() const {
@@ -92,6 +94,26 @@ void Environment::setHumidity(float hum) {
 
 float Environment::getHumidity() const {
     return humidity;
+}
+
+// -------------------------------------------------------------------------
+// Pollution
+
+void Environment::pollution_sim() {
+    float base = (hour >= 6 && hour <= 9) || (hour >= 17 && hour <= 20) ? 30.0f : 10.0f;
+    float delta = pollutionDist(sh::gen); 
+    pollution = base + delta;
+
+    if (pollution < 0.0f) pollution = 0.0f;
+    if (pollution > 100.0f) pollution = 100.0f;
+}
+
+void Environment::setPollution(float poll) {
+    pollution = poll;
+}
+
+float Environment::getPollution() const {
+    return pollution;
 }
 
 // -------------------------------------------------------------------------

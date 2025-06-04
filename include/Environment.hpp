@@ -5,6 +5,7 @@ private:
     float temperature;
     float brightness;
     float humidity;
+    float pollution;
     int hour;
 
 public:
@@ -27,6 +28,10 @@ public:
     void humidity_sim();
     void setHumidity(float hum);
     float getHumidity() const;
+
+    void pollution_sim();
+    void setPollution(float hum);
+    float getPollution() const;
 
     bool simulateMovement() const;
 

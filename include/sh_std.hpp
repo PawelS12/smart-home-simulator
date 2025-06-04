@@ -25,6 +25,7 @@ namespace sh {
     using std::sin;
 
     using std::cin;
+    using std::ios;
     using std::cout;
     using std::cerr;
     using std::endl;
