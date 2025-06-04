@@ -2,13 +2,19 @@
 
 #include "Environment.hpp"
 #include "sh_std.hpp"
+#include "sh_random.hpp"
 
 Environment::Environment() : temperature(22.0f), hour(12) {}
 
-void Environment::tick() {
+static std::uniform_real_distribution<float> tempDist(-0.5f, 0.5f);
+static std::uniform_real_distribution<float> humidityDist(-5.0f, 5.0f);
+static std::uniform_int_distribution<int> movementDist{0, 99};
+
+void Environment::simulation() {
     time_sim();
     temperature_sim();
     brightness_sim();
+    humidity_sim();
 }
 
 bool Environment::isDayTime() const {
@@ -19,8 +25,9 @@ bool Environment::isDayTime() const {
 // Temperature 
 
 void Environment::temperature_sim() {
-    float delta = (rand() % 11 - 5) / 10.0f;
+    float delta = tempDist(sh::gen);
     temperature += delta;
+
     if (temperature < 16.0f) temperature = 16.0f;
     if (temperature > 30.0f) temperature = 30.0f;
 }
@@ -66,4 +73,32 @@ void Environment::setBrightness(float bright) {
 
 float Environment::getBrightness() const {
     return brightness;
+}
+
+// -------------------------------------------------------------------------
+// Humidity
+
+void Environment::humidity_sim() {
+    float delta = humidityDist(sh::gen);
+    humidity += delta;
+
+    if (humidity < 30.0f) humidity = 30.0f;
+    if (humidity > 70.0f) humidity = 70.0f;
+}
+
+void Environment::setHumidity(float hum) {
+    humidity = hum;
+}
+
+float Environment::getHumidity() const {
+    return humidity;
+}
+
+// -------------------------------------------------------------------------
+// Movement
+
+bool Environment::simulateMovement() const {
+    int threshold = isDayTime() ? 5 : 30; 
+    int roll = movementDist(sh::gen);
+    return roll < threshold;
 }
