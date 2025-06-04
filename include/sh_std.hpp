@@ -10,6 +10,7 @@
 #include <functional>
 #include <sstream>
 #include <fstream>
+#include <cmath>
 
 namespace sh {
     using std::string;
@@ -21,6 +22,7 @@ namespace sh {
     using std::function;
     using std::ostringstream;
     using std::istringstream;
+    using std::sin;
 
     using std::cin;
     using std::cout;
