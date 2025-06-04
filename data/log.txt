@@ -1,140 +1,140 @@
-[Sensor_Salon] Temperature: 21.679C (Hour: 13)
+[Sensor_Salon] Temperature: 22.0837C (Hour: 13)
 [Ruch_Korytarz] Motion detected: NO (Hour: 13)
 [Swiatlo_dom] Brightness: 96.5926% (Hour: 13)
 [Wilgotnosc_dom] Humidity: 30% (Hour: 13)
-[Smog_dom] Pollution: 9.49441g/m^3 (Hour: 13)
+[Smog_dom] Pollution: 8.42727g/m^3 (Hour: 13)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.2354C (Hour: 14)
+[Sensor_Salon] Temperature: 21.8552C (Hour: 14)
 [Ruch_Korytarz] Motion detected: NO (Hour: 14)
 [Swiatlo_dom] Brightness: 86.6025% (Hour: 14)
-[Wilgotnosc_dom] Humidity: 33.0044% (Hour: 14)
-[Smog_dom] Pollution: 4.84783g/m^3 (Hour: 14)
+[Wilgotnosc_dom] Humidity: 33.694% (Hour: 14)
+[Smog_dom] Pollution: 8.47251g/m^3 (Hour: 14)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.339C (Hour: 15)
+[Sensor_Salon] Temperature: 22.125C (Hour: 15)
 [Ruch_Korytarz] Motion detected: NO (Hour: 15)
 [Swiatlo_dom] Brightness: 70.7107% (Hour: 15)
-[Wilgotnosc_dom] Humidity: 35.5809% (Hour: 15)
-[Smog_dom] Pollution: 9.58442g/m^3 (Hour: 15)
+[Wilgotnosc_dom] Humidity: 30.01% (Hour: 15)
+[Smog_dom] Pollution: 18.0892g/m^3 (Hour: 15)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.2326C (Hour: 16)
+[Sensor_Salon] Temperature: 22.2902C (Hour: 16)
 [Ruch_Korytarz] Motion detected: NO (Hour: 16)
 [Swiatlo_dom] Brightness: 50% (Hour: 16)
-[Wilgotnosc_dom] Humidity: 31.6542% (Hour: 16)
-[Smog_dom] Pollution: 16.8906g/m^3 (Hour: 16)
+[Wilgotnosc_dom] Humidity: 33.6531% (Hour: 16)
+[Smog_dom] Pollution: 13.3773g/m^3 (Hour: 16)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.6087C (Hour: 17)
+[Sensor_Salon] Temperature: 22.3035C (Hour: 17)
 [Ruch_Korytarz] Motion detected: NO (Hour: 17)
 [Swiatlo_dom] Brightness: 25.8819% (Hour: 17)
-[Wilgotnosc_dom] Humidity: 30.7506% (Hour: 17)
-[Smog_dom] Pollution: 37.1253g/m^3 (Hour: 17)
+[Wilgotnosc_dom] Humidity: 30.6837% (Hour: 17)
+[Smog_dom] Pollution: 27.5463g/m^3 (Hour: 17)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.1725C (Hour: 18)
+[Sensor_Salon] Temperature: 22.4651C (Hour: 18)
 [Ruch_Korytarz] Motion detected: NO (Hour: 18)
 [Swiatlo_dom] Brightness: 1.22461e-14% (Hour: 18)
-[Wilgotnosc_dom] Humidity: 30.838% (Hour: 18)
-[Smog_dom] Pollution: 22.3528g/m^3 (Hour: 18)
+[Wilgotnosc_dom] Humidity: 33.207% (Hour: 18)
+[Smog_dom] Pollution: 31.0865g/m^3 (Hour: 18)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.392C (Hour: 19)
-[Ruch_Korytarz] Motion detected: YES (Hour: 19)
+[Sensor_Salon] Temperature: 22.358C (Hour: 19)
+[Ruch_Korytarz] Motion detected: NO (Hour: 19)
 [Swiatlo_dom] Brightness: 0% (Hour: 19)
-[Wilgotnosc_dom] Humidity: 30% (Hour: 19)
-[Smog_dom] Pollution: 24.2257g/m^3 (Hour: 19)
+[Wilgotnosc_dom] Humidity: 34.8864% (Hour: 19)
+[Smog_dom] Pollution: 20.0408g/m^3 (Hour: 19)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.4943C (Hour: 20)
+[Sensor_Salon] Temperature: 21.8769C (Hour: 20)
 [Ruch_Korytarz] Motion detected: NO (Hour: 20)
 [Swiatlo_dom] Brightness: 0% (Hour: 20)
-[Wilgotnosc_dom] Humidity: 30.442% (Hour: 20)
-[Smog_dom] Pollution: 37.6363g/m^3 (Hour: 20)
+[Wilgotnosc_dom] Humidity: 31.5677% (Hour: 20)
+[Smog_dom] Pollution: 23.5566g/m^3 (Hour: 20)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.9765C (Hour: 21)
-[Ruch_Korytarz] Motion detected: NO (Hour: 21)
+[Sensor_Salon] Temperature: 22.1638C (Hour: 21)
+[Ruch_Korytarz] Motion detected: YES (Hour: 21)
 [Swiatlo_dom] Brightness: 0% (Hour: 21)
-[Wilgotnosc_dom] Humidity: 30.3204% (Hour: 21)
-[Smog_dom] Pollution: 13.161g/m^3 (Hour: 21)
+[Wilgotnosc_dom] Humidity: 34.6618% (Hour: 21)
+[Smog_dom] Pollution: 13.7546g/m^3 (Hour: 21)
 ----------------------------
 
-[Sensor_Salon] Temperature: 22.3905C (Hour: 22)
-[Ruch_Korytarz] Motion detected: YES (Hour: 22)
+[Sensor_Salon] Temperature: 21.7081C (Hour: 22)
+[Ruch_Korytarz] Motion detected: NO (Hour: 22)
 [Swiatlo_dom] Brightness: 0% (Hour: 22)
-[Wilgotnosc_dom] Humidity: 32.5357% (Hour: 22)
-[Smog_dom] Pollution: 14.7114g/m^3 (Hour: 22)
+[Wilgotnosc_dom] Humidity: 34.5586% (Hour: 22)
+[Smog_dom] Pollution: 16.7444g/m^3 (Hour: 22)
 ----------------------------
 
-[Sensor_Salon] Temperature: 22.2627C (Hour: 23)
+[Sensor_Salon] Temperature: 21.46C (Hour: 23)
 [Ruch_Korytarz] Motion detected: NO (Hour: 23)
 [Swiatlo_dom] Brightness: 0% (Hour: 23)
-[Wilgotnosc_dom] Humidity: 32.5375% (Hour: 23)
-[Smog_dom] Pollution: 8.12914g/m^3 (Hour: 23)
+[Wilgotnosc_dom] Humidity: 32.317% (Hour: 23)
+[Smog_dom] Pollution: 14.0953g/m^3 (Hour: 23)
 ----------------------------
 
-[Sensor_Salon] Temperature: 22.0766C (Hour: 0)
-[Ruch_Korytarz] Motion detected: YES (Hour: 0)
+[Sensor_Salon] Temperature: 21.0789C (Hour: 0)
+[Ruch_Korytarz] Motion detected: NO (Hour: 0)
 [Swiatlo_dom] Brightness: 0% (Hour: 0)
-[Wilgotnosc_dom] Humidity: 32.0172% (Hour: 0)
-[Smog_dom] Pollution: 1.6886g/m^3 (Hour: 0)
+[Wilgotnosc_dom] Humidity: 30% (Hour: 0)
+[Smog_dom] Pollution: 11.4566g/m^3 (Hour: 0)
 ----------------------------
 
-[Sensor_Salon] Temperature: 22.3909C (Hour: 1)
+[Sensor_Salon] Temperature: 21.1026C (Hour: 1)
 [Ruch_Korytarz] Motion detected: NO (Hour: 1)
 [Swiatlo_dom] Brightness: 0% (Hour: 1)
-[Wilgotnosc_dom] Humidity: 34.0065% (Hour: 1)
-[Smog_dom] Pollution: 11.6346g/m^3 (Hour: 1)
+[Wilgotnosc_dom] Humidity: 33.1664% (Hour: 1)
+[Smog_dom] Pollution: 19.1398g/m^3 (Hour: 1)
 ----------------------------
 
-[Sensor_Salon] Temperature: 22.4529C (Hour: 2)
-[Ruch_Korytarz] Motion detected: NO (Hour: 2)
+[Sensor_Salon] Temperature: 21.144C (Hour: 2)
+[Ruch_Korytarz] Motion detected: YES (Hour: 2)
 [Swiatlo_dom] Brightness: 0% (Hour: 2)
-[Wilgotnosc_dom] Humidity: 34.8718% (Hour: 2)
-[Smog_dom] Pollution: 12.0545g/m^3 (Hour: 2)
+[Wilgotnosc_dom] Humidity: 33.9286% (Hour: 2)
+[Smog_dom] Pollution: 2.92933g/m^3 (Hour: 2)
 ----------------------------
 
-[Sensor_Salon] Temperature: 22.2715C (Hour: 3)
+[Sensor_Salon] Temperature: 21.2102C (Hour: 3)
 [Ruch_Korytarz] Motion detected: NO (Hour: 3)
 [Swiatlo_dom] Brightness: 0% (Hour: 3)
-[Wilgotnosc_dom] Humidity: 35.4345% (Hour: 3)
-[Smog_dom] Pollution: 13.9513g/m^3 (Hour: 3)
+[Wilgotnosc_dom] Humidity: 33.7985% (Hour: 3)
+[Smog_dom] Pollution: 7.36687g/m^3 (Hour: 3)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.9456C (Hour: 4)
+[Sensor_Salon] Temperature: 21.3802C (Hour: 4)
 [Ruch_Korytarz] Motion detected: YES (Hour: 4)
 [Swiatlo_dom] Brightness: 0% (Hour: 4)
-[Wilgotnosc_dom] Humidity: 37.3585% (Hour: 4)
-[Smog_dom] Pollution: 12.7429g/m^3 (Hour: 4)
+[Wilgotnosc_dom] Humidity: 36.1976% (Hour: 4)
+[Smog_dom] Pollution: 3.93409g/m^3 (Hour: 4)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.6582C (Hour: 5)
+[Sensor_Salon] Temperature: 20.9808C (Hour: 5)
 [Ruch_Korytarz] Motion detected: NO (Hour: 5)
 [Swiatlo_dom] Brightness: 0% (Hour: 5)
-[Wilgotnosc_dom] Humidity: 38.3864% (Hour: 5)
-[Smog_dom] Pollution: 0.858917g/m^3 (Hour: 5)
+[Wilgotnosc_dom] Humidity: 34.349% (Hour: 5)
+[Smog_dom] Pollution: 18.7885g/m^3 (Hour: 5)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.6821C (Hour: 6)
+[Sensor_Salon] Temperature: 21.3294C (Hour: 6)
 [Ruch_Korytarz] Motion detected: YES (Hour: 6)
 [Swiatlo_dom] Brightness: 0% (Hour: 6)
-[Wilgotnosc_dom] Humidity: 41.0173% (Hour: 6)
-[Smog_dom] Pollution: 23.8416g/m^3 (Hour: 6)
+[Wilgotnosc_dom] Humidity: 34.0494% (Hour: 6)
+[Smog_dom] Pollution: 22.9778g/m^3 (Hour: 6)
 ----------------------------
 
-[Sensor_Salon] Temperature: 21.8982C (Hour: 7)
+[Sensor_Salon] Temperature: 21.5284C (Hour: 7)
 [Ruch_Korytarz] Motion detected: NO (Hour: 7)
 [Swiatlo_dom] Brightness: 25.8819% (Hour: 7)
-[Wilgotnosc_dom] Humidity: 42.0378% (Hour: 7)
-[Smog_dom] Pollution: 27.6062g/m^3 (Hour: 7)
+[Wilgotnosc_dom] Humidity: 34.7523% (Hour: 7)
+[Smog_dom] Pollution: 21.5219g/m^3 (Hour: 7)
 ----------------------------
 
-[Sensor_Salon] Temperature: 22.1555C (Hour: 8)
+[Sensor_Salon] Temperature: 21.6257C (Hour: 8)
 [Ruch_Korytarz] Motion detected: NO (Hour: 8)
 [Swiatlo_dom] Brightness: 50% (Hour: 8)
-[Wilgotnosc_dom] Humidity: 38.9188% (Hour: 8)
-[Smog_dom] Pollution: 37.574g/m^3 (Hour: 8)
+[Wilgotnosc_dom] Humidity: 37.1054% (Hour: 8)
+[Smog_dom] Pollution: 31.7327g/m^3 (Hour: 8)
 ----------------------------
 
