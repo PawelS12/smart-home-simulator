@@ -4,7 +4,12 @@
 #include "sh_std.hpp"
 #include "sh_random.hpp"
 
-Environment::Environment() : temperature(22.0f), hour(12) {}
+Environment::Environment() : temperature(22.0f), hour(12) {
+    doors["FrontDoor"] = false;
+    doors["BackDoor"]  = false;
+    windows["LivingRoomWindow"] = false;
+    windows["BedroomWindow"]    = false;
+}
 
 static std::uniform_real_distribution<float> tempDist(-0.5f, 0.5f);
 static std::uniform_real_distribution<float> humidityDist(-5.0f, 5.0f);
@@ -17,6 +22,8 @@ void Environment::simulation() {
     brightness_sim();
     humidity_sim();
     pollution_sim();
+    windows_sim();
+    doors_sim();
 }
 
 bool Environment::isDayTime() const {
@@ -122,5 +129,63 @@ float Environment::getPollution() const {
 bool Environment::simulateMovement() const {
     int threshold = isDayTime() ? 5 : 30; 
     int roll = movementDist(sh::gen);
+    
     return roll < threshold;
+}
+
+// -------------------------------------------------------------------------
+// Doors & Windows
+
+bool Environment::isDoorOpen(const sh::string& doorName) const {
+    auto it = doors.find(doorName);
+    return it != doors.end() ? it->second : false; 
+}
+
+void Environment::setDoorState(const sh::string& doorName, bool open) {
+    doors[doorName] = open;
+}
+
+bool Environment::isWindowOpen(const sh::string& windowName) const {
+    auto it = windows.find(windowName);
+    return it != windows.end() ? it->second : false;
+}
+
+void Environment::setWindowState(const sh::string& windowName, bool open) {
+    windows[windowName] = open;
+}
+
+void Environment::doors_sim() {
+    for (auto& [name, state] : doors) {
+        int chance = 0;
+
+        if (hour >= 7 && hour <= 9) {
+            chance = 50;
+        } else if (hour >= 18 && hour <= 21) {
+            chance = 40;
+        } else {
+            chance = 5;
+        } 
+
+        if (rand() % 100 < chance) {
+            state = !state;
+        }
+    }
+}
+
+void Environment::windows_sim() {
+    for (auto& [name, state] : windows) {
+        int chance = 0;
+
+        if (hour >= 6 && hour <= 8) {
+            chance = 30;
+        } else if (hour >= 16 && hour <= 19) {
+            chance = 25;
+        } else {
+            chance = 1;
+        }
+
+        if (rand() % 100 < chance) {
+            state = !state;
+        }
+    }
 }

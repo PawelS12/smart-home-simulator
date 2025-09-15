@@ -9,6 +9,8 @@
 #include "MotionSensor.hpp" 
 #include "HumiditySensor.hpp" 
 #include "PollutionSensor.hpp" 
+#include "WindowSensor.hpp" 
+#include "DoorSensor.hpp"
 
 int main() {
 
@@ -20,49 +22,25 @@ int main() {
     LightSensor sensor_3("Swiatlo_dom", &env);
     HumiditySensor sensor_4("Wilgotnosc_dom", &env);
     PollutionSensor sensor_5("Smog_dom", &env);
+    DoorSensor sensor_6("Drzwi_glowne", &env, "FrontDoor");
+    WindowSensor sensor_7("Okno_glowne", &env, "LivingRoomWindow");
 
     for (int i = 0; i < 20; ++i) {
         env.simulation();
+        sh::ostringstream frameLog;
 
-        std::ostringstream frameLog;
+        
+        logger.showAndLog(sensor, frameLog, &env);
+        logger.showAndLog(sensor_2, frameLog, &env);
+        logger.showAndLog(sensor_3, frameLog, &env);
+        logger.showAndLog(sensor_4, frameLog, &env);
+        logger.showAndLog(sensor_5, frameLog, &env);
+        logger.showAndLog(sensor_6, frameLog, &env);
+        logger.showAndLog(sensor_7, frameLog, &env);
 
-        sensor.update();
-        sensor.showStatus();
-        frameLog << "[" << sensor.getName() << "] Temperature: " 
-                 << sensor.getRawValue() << "C (Hour: " << env.getHour() << ")";
-
-        frameLog << "\n";
-
-        sensor_2.update();
-        sensor_2.showStatus();
-        frameLog << "[" << sensor_2.getName() << "] Motion detected: " 
-                 << (sensor_2.getRawValue() > 0.5f ? "YES" : "NO") 
-                 << " (Hour: " << env.getHour() << ")";
-
-        frameLog << "\n";
-
-        sensor_3.update();
-        sensor_3.showStatus();
-        frameLog << "[" << sensor_3.getName() << "] Brightness: " 
-                 << sensor_3.getRawValue() << "% (Hour: " << env.getHour() << ")";
-
-        frameLog << "\n";
-
-        sensor_4.update();
-        sensor_4.showStatus();
-        frameLog << "[" << sensor_4.getName() << "] Humidity: " 
-                 << sensor_4.getRawValue() << "% (Hour: " << env.getHour() << ")";
-
-        frameLog << "\n";
-
-        sensor_5.update();
-        sensor_5.showStatus();
-        frameLog << "[" << sensor_5.getName() << "] Pollution: " 
-                 << sensor_5.getRawValue() << "g/m^3 (Hour: " << env.getHour() << ")";
-
-        frameLog << "\n----------------------------\n";
-
+        frameLog << "----------------------------\n";
         logger.log(frameLog.str());
+
         sh::cout << sh::endl;
     }
 

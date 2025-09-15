@@ -17,7 +17,7 @@ float MotionSensor::getRawValue() const {
 void MotionSensor::showStatus() const {
     sh::cout << "[" << name << "] Motion detected: "
              << (motionDetected ? "YES" : "NO")
-             << " (Hour: " << environment->getHour() << ")"
+             << " (Hour: " << environment->getHour() << ":00)"
              << sh::endl;
 }
 

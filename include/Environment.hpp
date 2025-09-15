@@ -1,5 +1,7 @@
 #pragma once
 
+#include "sh_std.hpp"
+
 class Environment {
 private:
     float temperature;
@@ -7,6 +9,9 @@ private:
     float humidity;
     float pollution;
     int hour;
+
+    sh::map<sh::string, bool> doors;
+    sh::map<sh::string, bool> windows;
 
 public:
     Environment();
@@ -32,6 +37,13 @@ public:
     void pollution_sim();
     void setPollution(float hum);
     float getPollution() const;
+
+    void doors_sim();
+    void windows_sim();
+    bool isDoorOpen(const sh::string& doorName) const;
+    void setDoorState(const sh::string& doorName, bool open);
+    bool isWindowOpen(const sh::string& windowName) const;
+    void setWindowState(const sh::string& windowName, bool open);
 
     bool simulateMovement() const;
 

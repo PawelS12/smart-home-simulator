@@ -16,6 +16,6 @@ float PollutionSensor::getRawValue() const {
 
 void PollutionSensor::showStatus() const {
     sh::cout << "[" << name << "] Pollution: " << pollution 
-             << "g/m^3 (Hour: " << environment->getHour() << ")" 
+             << "g/m^3 (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }

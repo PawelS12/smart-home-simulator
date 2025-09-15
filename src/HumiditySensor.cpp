@@ -16,6 +16,6 @@ float HumiditySensor::getRawValue() const {
 
 void HumiditySensor::showStatus() const {
     sh::cout << "[" << name << "] Humidity: " << humidity 
-             << "% (Hour: " << environment->getHour() << ")" 
+             << "% (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }

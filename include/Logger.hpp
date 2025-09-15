@@ -4,6 +4,8 @@
 #include <string>
 
 #include "sh_std.hpp"
+#include "Sensor.hpp"
+#include "Environment.hpp"
 
 class Logger {
 private:
@@ -14,4 +16,5 @@ public:
     ~Logger();
 
     void log(const sh::string& text);
+    void showAndLog(Sensor& s, sh::ostringstream& log, Environment* env);
 };

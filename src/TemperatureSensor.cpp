@@ -16,6 +16,6 @@ float TemperatureSensor::getRawValue() const {
 
 void TemperatureSensor::showStatus() const {
     sh::cout << "[" << name << "] Temperature: " << temperature 
-             << "C (Hour: " << environment->getHour() << ")" 
+             << "C (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }

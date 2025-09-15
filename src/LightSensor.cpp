@@ -16,6 +16,6 @@ float LightSensor::getRawValue() const {
 
 void LightSensor::showStatus() const {
     sh::cout << "[" << name << "] Brightness: " << brightness 
-             << "% (Hour: " << environment->getHour() << ")" 
+             << "% (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }
