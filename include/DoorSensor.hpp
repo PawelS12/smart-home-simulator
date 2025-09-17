@@ -17,4 +17,5 @@ public:
     float getRawValue() const override;
     void showStatus() const override;
     sh::string getName() const override;
+    sh::string toLogString() const override;
 };

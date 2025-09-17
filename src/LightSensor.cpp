@@ -19,3 +19,7 @@ void LightSensor::showStatus() const {
              << "% (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }
+
+sh::string LightSensor::toLogString() const {
+    return "Brightness: " + sh::to_string(brightness) + "%";
+}

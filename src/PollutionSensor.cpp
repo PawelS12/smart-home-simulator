@@ -19,3 +19,7 @@ void PollutionSensor::showStatus() const {
              << "g/m^3 (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }
+
+sh::string PollutionSensor::toLogString() const {
+    return "Pollution: " + sh::to_string(pollution) + "g/m^3";
+}

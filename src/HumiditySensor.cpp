@@ -19,3 +19,7 @@ void HumiditySensor::showStatus() const {
              << "% (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }
+
+sh::string HumiditySensor::toLogString() const {
+    return "Humidity: " + sh::to_string(humidity) + "%";
+}

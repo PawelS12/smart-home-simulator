@@ -20,3 +20,7 @@ void DoorSensor::showStatus() const {
              << " (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }
+
+sh::string DoorSensor::toLogString() const {
+    return "Door state: " + sh::string(isOpen ? "OPEN" : "CLOSED");
+}

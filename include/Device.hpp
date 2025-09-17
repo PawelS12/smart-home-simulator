@@ -10,4 +10,5 @@ public:
 
     virtual void showStatus() const = 0;
     virtual sh::string getName() const = 0;
+    virtual sh::string toLogString() const = 0;
 };

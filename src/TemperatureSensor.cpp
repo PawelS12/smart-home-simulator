@@ -19,3 +19,7 @@ void TemperatureSensor::showStatus() const {
              << "C (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }
+
+sh::string TemperatureSensor::toLogString() const {
+    return "Temperature: " + sh::to_string(temperature) + "C";
+}

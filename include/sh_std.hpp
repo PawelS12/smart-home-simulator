@@ -29,6 +29,7 @@ namespace sh {
     using std::cout;
     using std::cerr;
     using std::endl;
+    using std::to_string;
     using std::ifstream;
     using std::ofstream;
 }

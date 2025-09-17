@@ -20,3 +20,7 @@ void WindowSensor::showStatus() const {
              << " (Hour: " << environment->getHour() << ":00)" 
              << sh::endl;
 }
+
+sh::string WindowSensor::toLogString() const {
+    return "Window state: " + sh::string(isOpen ? "OPEN" : "CLOSED");
+}

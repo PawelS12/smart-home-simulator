@@ -24,3 +24,7 @@ void MotionSensor::showStatus() const {
 sh::string MotionSensor::getName() const {
     return name;
 }
+
+sh::string MotionSensor::toLogString() const {
+    return "Motion detected: " + sh::string(motionDetected ? "YES" : "NO");
+}
