@@ -1,0 +1,27 @@
+@startuml Smart Home
+class Device
+class Sensor
+class Actuator
+class Environment
+
+Device <|-- Sensor
+Sensor <|-- TemperatureSensor
+Sensor <|-- LightSensor
+Sensor <|-- MotionSensor
+Sensor <|-- DoorSensor
+Sensor <|-- HumiditySensor
+Sensor <|-- WindowSensor
+Sensor <|-- PollutionSensor
+
+Device <|-- Actuator 
+Actuator <|-- Heater
+Actuator <|-- Light
+Actuator <|-- DoorLock
+Actuator <|-- WindowMotor
+Actuator <|-- AirPurifier
+Actuator <|-- Alarm
+Actuator <|-- AirConditioner
+
+Sensor --> Environment
+Actuator --> Environment
+@enduml
