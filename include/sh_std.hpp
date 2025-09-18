@@ -32,4 +32,7 @@ namespace sh {
     using std::to_string;
     using std::ifstream;
     using std::ofstream;
+
+    using std::min;
+    using std::max;
 }

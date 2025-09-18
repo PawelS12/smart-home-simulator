@@ -11,11 +11,6 @@ Environment::Environment() : temperature(22.0f), hour(12) {
     windows["BedroomWindow"]    = false;
 }
 
-static std::uniform_real_distribution<float> tempDist(-0.5f, 0.5f);
-static std::uniform_real_distribution<float> humidityDist(-5.0f, 5.0f);
-static std::uniform_int_distribution<int> movementDist{0, 99};
-static std::uniform_real_distribution<float> pollutionDist(-10.0f, 10.0f);
-
 void Environment::simulation() {
     time_sim();
     temperature_sim();
@@ -34,7 +29,7 @@ bool Environment::isDayTime() const {
 // Temperature 
 
 void Environment::temperature_sim() {
-    float delta = tempDist(sh::gen);
+    float delta = sh::randomFloat(-0.5f, 0.5f);
     temperature += delta;
 
     if (temperature < 16.0f) temperature = 16.0f;
@@ -88,7 +83,7 @@ float Environment::getBrightness() const {
 // Humidity
 
 void Environment::humidity_sim() {
-    float delta = humidityDist(sh::gen);
+    float delta = sh::randomFloat(-5.0f, 5.0f);
     humidity += delta;
 
     if (humidity < 30.0f) humidity = 30.0f;
@@ -108,7 +103,7 @@ float Environment::getHumidity() const {
 
 void Environment::pollution_sim() {
     float base = (hour >= 6 && hour <= 9) || (hour >= 17 && hour <= 20) ? 30.0f : 10.0f;
-    float delta = pollutionDist(sh::gen); 
+    float delta = sh::randomFloat(-10.0f, 10.0f);
     pollution = base + delta;
 
     if (pollution < 0.0f) pollution = 0.0f;
@@ -128,7 +123,7 @@ float Environment::getPollution() const {
 
 bool Environment::simulateMovement() const {
     int threshold = isDayTime() ? 5 : 30; 
-    int roll = movementDist(sh::gen);
+    int roll = sh::randomInt(0, 99);
     
     return roll < threshold;
 }
@@ -166,7 +161,7 @@ void Environment::doors_sim() {
             chance = 5;
         } 
 
-        if (rand() % 100 < chance) {
+        if (sh::randomInt(0, 99) < chance) {
             state = !state;
         }
     }
@@ -184,7 +179,7 @@ void Environment::windows_sim() {
             chance = 1;
         }
 
-        if (rand() % 100 < chance) {
+        if (sh::randomInt(0, 99) < chance) {
             state = !state;
         }
     }
