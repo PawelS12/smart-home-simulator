@@ -17,12 +17,12 @@ void Logger::log(const sh::string& text) {
     }
 }
 
-void Logger::showAndLog(Sensor& s, sh::ostringstream& log, Environment* env) {
-    s.update();
+void Logger::showAndLog(Device& d, sh::ostringstream& log, Environment* env) {
+    d.update();
 
-    s.showStatus();
+    d.showStatus();
 
-    log << "[" << s.getName() << "] "
-        << s.toLogString()
+    log << "[" << d.getName() << "] "
+        << d.toLogString()
         << " (Hour: " << env->getHour() << ":00)\n";
 }

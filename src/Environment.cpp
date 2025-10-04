@@ -129,7 +129,7 @@ bool Environment::simulateMovement() const {
 }
 
 // -------------------------------------------------------------------------
-// Doors & Windows
+// Doors 
 
 bool Environment::isDoorOpen(const sh::string& doorName) const {
     auto it = doors.find(doorName);
@@ -138,15 +138,6 @@ bool Environment::isDoorOpen(const sh::string& doorName) const {
 
 void Environment::setDoorState(const sh::string& doorName, bool open) {
     doors[doorName] = open;
-}
-
-bool Environment::isWindowOpen(const sh::string& windowName) const {
-    auto it = windows.find(windowName);
-    return it != windows.end() ? it->second : false;
-}
-
-void Environment::setWindowState(const sh::string& windowName, bool open) {
-    windows[windowName] = open;
 }
 
 void Environment::doors_sim() {
@@ -165,6 +156,18 @@ void Environment::doors_sim() {
             state = !state;
         }
     }
+}
+
+// -------------------------------------------------------------------------
+// Windows
+
+bool Environment::isWindowOpen(const sh::string& windowName) const {
+    auto it = windows.find(windowName);
+    return it != windows.end() ? it->second : false;
+}
+
+void Environment::setWindowState(const sh::string& windowName, bool open) {
+    windows[windowName] = open;
 }
 
 void Environment::windows_sim() {

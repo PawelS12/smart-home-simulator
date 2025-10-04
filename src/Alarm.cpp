@@ -2,7 +2,8 @@
 #include "Environment.hpp"
 #include "Alarm.hpp"
 
-Alarm::Alarm(const sh::string& n, int t) : Actuator(n), type(t) {}
+Alarm::Alarm(const sh::string& n, Environment* env, int t) 
+    : Actuator(n), environment(env), type(t) {}
 
 void Alarm::activate() {
     active = true;
