@@ -1,6 +1,7 @@
 #pragma once
 
 #include "sh_std.hpp"
+#include "IObserver.hpp"
 
 class Environment {
 private:
@@ -12,9 +13,21 @@ private:
 
     sh::map<sh::string, bool> doors;
     sh::map<sh::string, bool> windows;
+    
+    sh::vector<IObserver*> observers;
 
 public:
     Environment();
+
+    // -------------------------------------------------------------------------
+    // Observer
+
+    void addObserver(IObserver* obs);
+    void removeObserver(IObserver* obs);
+    void notifyObservers();
+
+    // -------------------------------------------------------------------------
+    // Environment Simulation
 
     void simulation();
 

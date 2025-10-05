@@ -26,3 +26,5 @@ sh::string Actuator::getName() const {
 sh::string Actuator::toLogString() const {
     return "[" + name + "] State: " + (active ? "ON" : "OFF"); 
 }
+
+void Actuator::onNotify() {}

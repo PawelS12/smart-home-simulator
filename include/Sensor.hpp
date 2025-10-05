@@ -1,8 +1,9 @@
 #pragma once
 
 #include "Device.hpp"
+#include "IObserver.hpp"
 
-class Sensor : public Device {
+class Sensor : public Device, public IObserver {
 protected:
     sh::string name;
 
@@ -16,4 +17,6 @@ public:
 
     void showStatus() const override;
     sh::string getName() const override;
+
+    void onNotify() override;
 };

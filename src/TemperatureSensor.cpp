@@ -1,13 +1,13 @@
 #include "TemperatureSensor.hpp"
 
-TemperatureSensor::TemperatureSensor(const sh::string& name, Environment* env) : Sensor(name), environment(env) {}
+TemperatureSensor::TemperatureSensor(const sh::string& name, Environment* env) 
+    : Sensor(name), environment(env) 
+{
+    environment->addObserver(this);
+}
 
 sh::string TemperatureSensor::getName() const {
     return name;
-}
-
-void TemperatureSensor::update() {
-    temperature = environment->getTemperature();
 }
 
 float TemperatureSensor::getRawValue() const {
@@ -23,3 +23,9 @@ void TemperatureSensor::showStatus() const {
 sh::string TemperatureSensor::toLogString() const {
     return "Temperature: " + sh::to_string(temperature) + "C";
 }
+
+void TemperatureSensor::onNotify() {
+    temperature = environment->getTemperature();
+}
+
+void TemperatureSensor::update() {}

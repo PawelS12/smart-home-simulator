@@ -9,3 +9,5 @@ sh::string Sensor::getName() const {
 void Sensor::showStatus() const {
     sh::cout << "status";
 }
+
+void Sensor::onNotify() {}

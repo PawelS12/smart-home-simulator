@@ -15,4 +15,6 @@ public:
     void deactivate() override;
     void setTargetTemp(float temp);
     float getTargetTemp() const;
+
+    void onNotify() override;
 };

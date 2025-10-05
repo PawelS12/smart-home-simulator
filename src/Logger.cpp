@@ -18,8 +18,6 @@ void Logger::log(const sh::string& text) {
 }
 
 void Logger::showAndLog(Device& d, sh::ostringstream& log, Environment* env) {
-    d.update();
-
     d.showStatus();
 
     log << "[" << d.getName() << "] "

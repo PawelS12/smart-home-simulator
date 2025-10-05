@@ -16,4 +16,6 @@ public:
     void showStatus() const override;
     sh::string getName() const override;
     sh::string toLogString() const override;
+
+    void onNotify() override;
 };

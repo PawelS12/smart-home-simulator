@@ -1,4 +1,5 @@
 #include <cstdlib>
+#include <algorithm> 
 
 #include "Environment.hpp"
 #include "sh_std.hpp"
@@ -19,10 +20,29 @@ void Environment::simulation() {
     pollution_sim();
     windows_sim();
     doors_sim();
+
+    notifyObservers();
 }
 
 bool Environment::isDayTime() const {
     return hour < 20 && hour > 6;
+}
+
+// -------------------------------------------------------------------------
+// Observer
+
+void Environment::addObserver(IObserver* obs) {
+    observers.push_back(obs);
+}
+
+void Environment::removeObserver(IObserver* obs) {
+    observers.erase(sh::remove(observers.begin(), observers.end(), obs), observers.end());
+}
+
+void Environment::notifyObservers() {
+    for (auto* obs : observers) {
+        obs->onNotify();
+    }
 }
 
 // -------------------------------------------------------------------------
