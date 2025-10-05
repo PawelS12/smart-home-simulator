@@ -12,7 +12,6 @@ public:
 
     virtual ~Sensor() = default;
 
-    virtual void update() = 0;
     virtual float getRawValue() const = 0;
 
     void showStatus() const override;

@@ -1,4 +1,5 @@
 #include "TemperatureSensor.hpp"
+#include <algorithm>
 
 TemperatureSensor::TemperatureSensor(const sh::string& name, Environment* env) 
     : Sensor(name), environment(env) 
@@ -26,6 +27,5 @@ sh::string TemperatureSensor::toLogString() const {
 
 void TemperatureSensor::onNotify() {
     temperature = environment->getTemperature();
+    notifyObservers();
 }
-
-void TemperatureSensor::update() {}

@@ -45,6 +45,16 @@ void Environment::notifyObservers() {
     }
 }
 
+int Environment::countObservers() {
+    int counter = 0;
+
+    for (auto* obs : observers) {
+        counter++;
+    }
+
+    return counter;
+}
+
 // -------------------------------------------------------------------------
 // Temperature 
 

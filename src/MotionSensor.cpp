@@ -2,12 +2,10 @@
 
 #include "MotionSensor.hpp"
 
-MotionSensor::MotionSensor(const sh::string& name, Environment* env) : Sensor(name), environment(env), motionDetected(false) {}
-
-void MotionSensor::update() {
-    if (environment) {
-        motionDetected = environment->simulateMovement();
-    }
+MotionSensor::MotionSensor(const sh::string& name, Environment* env) 
+    : Sensor(name), environment(env), motionDetected(false) 
+{
+    environment->addObserver(this);
 }
  
 float MotionSensor::getRawValue() const {
@@ -27,4 +25,11 @@ sh::string MotionSensor::getName() const {
 
 sh::string MotionSensor::toLogString() const {
     return "Motion detected: " + sh::string(motionDetected ? "YES" : "NO");
+}
+
+void MotionSensor::onNotify() {
+    if (environment) {
+        motionDetected = environment->simulateMovement();
+    }
+    notifyObservers();
 }

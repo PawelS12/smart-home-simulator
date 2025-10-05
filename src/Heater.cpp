@@ -1,11 +1,9 @@
-#include "Actuator.hpp"
-#include "Environment.hpp"
 #include "Heater.hpp"
 
-Heater::Heater(const sh::string& n, Environment* env, float target)
-    : Actuator(n), environment(env), targetTemp(target) 
+Heater::Heater(const sh::string& n, TemperatureSensor* s, float target)
+    : Actuator(n), sensor(s), targetTemp(target) 
 {
-    environment->addObserver(this);
+    sensor->addObserver(this);
 }
 
 void Heater::activate() {
@@ -25,7 +23,7 @@ float Heater::getTargetTemp() const {
 }
 
 void Heater::onNotify() {
-    float currentTemp = environment->getTemperature();
+    float currentTemp = sensor->getRawValue();
 
     if (currentTemp < targetTemp) {
         activate();

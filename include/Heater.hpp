@@ -1,15 +1,16 @@
 #pragma once
 
 #include "Actuator.hpp"
-#include "Environment.hpp"
+#include "IObserver.hpp"
+#include "TemperatureSensor.hpp"
 
 class Heater : public Actuator {
 private:
-    Environment* environment;
+    TemperatureSensor* sensor;
     float targetTemp;
 
 public:
-    Heater(const sh::string& name, Environment* env, float target = 22.0f);
+    Heater(const sh::string& name, TemperatureSensor* s, float target = 22.0f);
 
     void activate() override;
     void deactivate() override;

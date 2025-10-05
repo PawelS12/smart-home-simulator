@@ -1,13 +1,14 @@
 #include "LightSensor.hpp"
+#include <algorithm>
 
-LightSensor::LightSensor(const sh::string& name, Environment* env) : Sensor(name), environment(env) {}
+LightSensor::LightSensor(const sh::string& name, Environment* env) 
+    : Sensor(name), environment(env) 
+{
+    environment->addObserver(this);
+}
 
 sh::string LightSensor::getName() const {
     return name;
-}
-
-void LightSensor::update() {
-    brightness = environment->getBrightness();
 }
 
 float LightSensor::getRawValue() const {
@@ -22,4 +23,9 @@ void LightSensor::showStatus() const {
 
 sh::string LightSensor::toLogString() const {
     return "Brightness: " + sh::to_string(brightness) + "%";
+}
+
+void LightSensor::onNotify() {
+    brightness = environment->getBrightness();
+    notifyObservers();
 }
