@@ -1,14 +1,13 @@
 #include "DoorSensor.hpp"
 
 DoorSensor::DoorSensor(const sh::string& name, Environment* env, const sh::string& door) 
-    : Sensor(name), environment(env), doorName(door) {}
+    : Sensor(name), environment(env), doorName(door) 
+{
+    environment->addObserver(this);
+}
 
 sh::string DoorSensor::getName() const {
     return name;
-}
-
-void DoorSensor::update() {
-    isOpen = environment->isDoorOpen(doorName);
 }
 
 float DoorSensor::getRawValue() const {
@@ -23,4 +22,9 @@ void DoorSensor::showStatus() const {
 
 sh::string DoorSensor::toLogString() const {
     return "Door state: " + sh::string(isOpen ? "OPEN" : "CLOSED");
+}
+
+void DoorSensor::onNotify() {
+    isOpen = environment->isDoorOpen(doorName);
+    notifyObservers();
 }

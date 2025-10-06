@@ -26,14 +26,13 @@ int main() {
 
     Environment env;
 
-    TemperatureSensor sensor("Sensor_Salon", &env);
-    Heater actuator("Ogrzewanie", &sensor, 22.0f);
+    TemperatureSensor temperatureSensor_1("TemperatureSensor_Salon", &env);
+    Heater heater_1("Heater_LivingRoom", &temperatureSensor_1, 22.0f);
 
-    MotionSensor sensor_2("Ruch_salon", &env);
+    MotionSensor motionSensor_1("MotionSensor_Salon", &env);
 
-    LightSensor sensor_1("Swiatlo_dom", &env);
-    Light actuator_1("Lampka_Salon", &sensor_1, &sensor_2);
-
+    LightSensor lightSensor_1("LightSensor_Salon", &env);
+    Light light_1("Light_Salon", &lightSensor_1, &motionSensor_1);
 
     sh::cout << env.countObservers() << sh::endl;
 
@@ -41,13 +40,13 @@ int main() {
         env.simulation();
         sh::ostringstream frameLog;
 
-        logger.showAndLog(sensor, frameLog, &env);
-        logger.showAndLog(actuator, frameLog, &env);
+        logger.showAndLog(temperatureSensor_1, frameLog, &env);
+        logger.showAndLog(heater_1, frameLog, &env);
 
-        logger.showAndLog(sensor_2, frameLog, &env);
+        logger.showAndLog(motionSensor_1, frameLog, &env);
 
-        logger.showAndLog(sensor_1, frameLog, &env);
-        logger.showAndLog(actuator_1, frameLog, &env);
+        logger.showAndLog(lightSensor_1, frameLog, &env);
+        logger.showAndLog(light_1, frameLog, &env);
 
         frameLog << "----------------------------\n";
         logger.log(frameLog.str());

@@ -2,17 +2,20 @@
 
 #include "Sensor.hpp"
 #include "Environment.hpp"
+#include "Observable.hpp"
 
-class PollutionSensor : public Sensor {
+class PollutionSensor : public Sensor, public Observable {
     float pollution = 10.0f;
     Environment* environment;
+    sh::vector<IObserver*> observers;
 
 public:
     PollutionSensor(const sh::string& name, Environment* env);
 
-    void update() override;
     float getRawValue() const override;
     void showStatus() const override;
     sh::string getName() const override;
     sh::string toLogString() const override;
+
+    void onNotify() override;
 };

@@ -1,13 +1,13 @@
 #include "PollutionSensor.hpp"
 
-PollutionSensor::PollutionSensor(const sh::string& name, Environment* env) : Sensor(name), environment(env) {}
+PollutionSensor::PollutionSensor(const sh::string& name, Environment* env) 
+    : Sensor(name), environment(env) 
+{
+    environment->addObserver(this);
+}
 
 sh::string PollutionSensor::getName() const {
     return name;
-}
-
-void PollutionSensor::update() {
-    pollution = environment->getPollution();
 }
 
 float PollutionSensor::getRawValue() const {
@@ -22,4 +22,9 @@ void PollutionSensor::showStatus() const {
 
 sh::string PollutionSensor::toLogString() const {
     return "Pollution: " + sh::to_string(pollution) + "g/m^3";
+}
+
+void PollutionSensor::onNotify() {
+    pollution = environment->getPollution();
+    notifyObservers();
 }

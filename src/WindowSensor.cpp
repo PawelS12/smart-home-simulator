@@ -1,14 +1,13 @@
 #include "WindowSensor.hpp"
 
 WindowSensor::WindowSensor(const sh::string& name, Environment* env, const sh::string& window) 
-    : Sensor(name), environment(env), windowName(window) {}
+    : Sensor(name), environment(env), windowName(window)
+{
+    environment->addObserver(this);
+}
 
 sh::string WindowSensor::getName() const {
     return name;
-}
-
-void WindowSensor::update() {
-    isOpen = environment->isWindowOpen(windowName);
 }
 
 float WindowSensor::getRawValue() const {
@@ -23,4 +22,9 @@ void WindowSensor::showStatus() const {
 
 sh::string WindowSensor::toLogString() const {
     return "Window state: " + sh::string(isOpen ? "OPEN" : "CLOSED");
+}
+
+void WindowSensor::onNotify() {
+    isOpen = environment->isWindowOpen(windowName);
+    notifyObservers();
 }
