@@ -25,6 +25,12 @@ sh::string WindowSensor::toLogString() const {
 }
 
 void WindowSensor::onNotify() {
-    isOpen = environment->isWindowOpen(windowName);
+    int state = environment->getRandomWindowState();
+    isOpen = (state == 1);
+    
     notifyObservers();
+}
+
+bool WindowSensor::isOpenNow() const {
+    return isOpen;
 }

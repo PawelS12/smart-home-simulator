@@ -1,7 +1,7 @@
 #include "Light.hpp"
 
-Light::Light(const sh::string& name, LightSensor* lSensor, MotionSensor* mSensor)
-    : Actuator(name), lightSensor(lSensor), movementSensor(mSensor), brightness(100)
+Light::Light(const sh::string& name, LightSensor* lightSensor, MotionSensor* motionSensor)
+    : Actuator(name), lightSensor(lightSensor), movementSensor(motionSensor), brightness(100)
 {
     lightSensor->addObserver(this);
     movementSensor->addObserver(this); 

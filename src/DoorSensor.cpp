@@ -25,6 +25,12 @@ sh::string DoorSensor::toLogString() const {
 }
 
 void DoorSensor::onNotify() {
-    isOpen = environment->isDoorOpen(doorName);
+    int state = environment->getRandomDoorState();
+    isOpen = (state == 1);
+    
     notifyObservers();
+}
+
+bool DoorSensor::isOpenNow() const {
+    return isOpen;
 }

@@ -1,16 +1,32 @@
 #include "Actuator.hpp"
-#include "Environment.hpp"
 #include "DoorLock.hpp"
 
-DoorLock::DoorLock(const sh::string& n, Environment* env, const sh::string& door)
-    : Actuator(n), environment(env), doorName(door) {}
+DoorLock::DoorLock(const sh::string& n, DoorSensor* doorSensor)
+    : Actuator(n), doorSensor(doorSensor) 
+{
+    doorSensor->addObserver(this);
+}
 
 void DoorLock::activate() {
     active = true;
-    environment->setDoorState(doorName, false); 
 }
 
 void DoorLock::deactivate() {
     active = false;
-    environment->setDoorState(doorName, true); 
+}
+
+sh::string DoorLock::toLogString() const {
+    return "Door Lock state: " + sh::string(isActive() ? "LOCKED" : "UNLOCKED");
+}
+
+void DoorLock::onNotify() {
+    if (doorSensor->isOpenNow()) {
+        activate();
+    } else {
+        deactivate();
+    }
+}
+
+void DoorLock::showStatus() const {
+    sh::cout << "[" << name << "] State: " << (active ? "LOCKED" : "UNLOCKED") << sh::endl;
 }

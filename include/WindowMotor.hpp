@@ -1,18 +1,19 @@
 #pragma once
 #include "Actuator.hpp"
-#include "Environment.hpp"
+#include "WindowSensor.hpp"
 
 class WindowMotor : public Actuator {
 private:
-    Environment* environment;
-    sh::string windowName;
-    int position;
+    WindowSensor* windowSensor;
 
 public:
-    WindowMotor(const sh::string& name, Environment* env, const sh::string& window);
+    WindowMotor(const sh::string& name, WindowSensor* windowSensor);
 
     void activate() override;
     void deactivate() override;
-    void setPosition(int pos);
-    int getPosition() const;
+
+    void onNotify() override;
+    void showStatus() const override;
+
+    sh::string toLogString() const override;
 };

@@ -43,6 +43,8 @@ int main() {
     AirConditioner airConditioner_1("AirConditioner Bath Room", &temperatureSensor_2, &humiditySensor_1);
     AirPurifier airPurifier_1("Air Purifier Bath Room", &humiditySensor_1, &pollutionSensor_1);
     Alarm alarm_1("Alarm Bath Room", &temperatureSensor_2, &humiditySensor_1, &pollutionSensor_1);
+    DoorLock doorLock_1("Door Lock Main Door", &doorSensor_1);
+    WindowMotor windowMotor_1("Window Motor Salon window", &widnowSensor_1);
 
     sh::cout << salon_env.countObservers() << " sensors in Salon." << sh::endl;
     sh::cout << bathRoom_env.countObservers() << " sensors in Bath Room." << sh::endl;
@@ -68,6 +70,12 @@ int main() {
         logger.showAndLog(airPurifier_1, frameLog, &bathRoom_env);
 
         logger.showAndLog(alarm_1, frameLog, &bathRoom_env);
+
+        logger.showAndLog(doorSensor_1, frameLog, &salon_env);
+        logger.showAndLog(doorLock_1, frameLog, &salon_env);
+
+        logger.showAndLog(widnowSensor_1, frameLog, &salon_env);
+        logger.showAndLog(windowMotor_1, frameLog, &salon_env);
 
         frameLog << "\n----------------------------\n";
         logger.log(frameLog.str());

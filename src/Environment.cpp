@@ -5,12 +5,7 @@
 #include "sh_std.hpp"
 #include "sh_random.hpp"
 
-Environment::Environment() : temperature(22.0f), hour(12) {
-    doors["FrontDoor"] = false;
-    doors["BackDoor"]  = false;
-    windows["LivingRoomWindow"] = false;
-    windows["BedroomWindow"]    = false;
-}
+Environment::Environment() : temperature(22.0f), hour(12) { }
 
 void Environment::simulation() {
     time_sim();
@@ -18,8 +13,6 @@ void Environment::simulation() {
     brightness_sim();
     humidity_sim();
     pollution_sim();
-    windows_sim();
-    doors_sim();
 
     notifyObservers();
 }
@@ -159,61 +152,12 @@ bool Environment::simulateMovement() const {
 }
 
 // -------------------------------------------------------------------------
-// Doors 
+// Doors & Windows
 
-bool Environment::isDoorOpen(const sh::string& doorName) const {
-    auto it = doors.find(doorName);
-    return it != doors.end() ? it->second : false; 
+int Environment::getRandomDoorState() const {
+    return sh::randomInt(0, 1); // 0 = closed, 1 = open
 }
 
-void Environment::setDoorState(const sh::string& doorName, bool open) {
-    doors[doorName] = open;
-}
-
-void Environment::doors_sim() {
-    for (auto& [name, state] : doors) {
-        int chance = 0;
-
-        if (hour >= 7 && hour <= 9) {
-            chance = 50;
-        } else if (hour >= 18 && hour <= 21) {
-            chance = 40;
-        } else {
-            chance = 5;
-        } 
-
-        if (sh::randomInt(0, 99) < chance) {
-            state = !state;
-        }
-    }
-}
-
-// -------------------------------------------------------------------------
-// Windows
-
-bool Environment::isWindowOpen(const sh::string& windowName) const {
-    auto it = windows.find(windowName);
-    return it != windows.end() ? it->second : false;
-}
-
-void Environment::setWindowState(const sh::string& windowName, bool open) {
-    windows[windowName] = open;
-}
-
-void Environment::windows_sim() {
-    for (auto& [name, state] : windows) {
-        int chance = 0;
-
-        if (hour >= 6 && hour <= 8) {
-            chance = 30;
-        } else if (hour >= 16 && hour <= 19) {
-            chance = 25;
-        } else {
-            chance = 1;
-        }
-
-        if (sh::randomInt(0, 99) < chance) {
-            state = !state;
-        }
-    }
+int Environment::getRandomWindowState() const {
+    return sh::randomInt(0, 1); // 0 = closed, 1 = open
 }

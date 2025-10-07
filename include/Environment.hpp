@@ -10,9 +10,6 @@ private:
     float humidity;
     float pollution;
     int hour;
-
-    sh::map<sh::string, bool> doors;
-    sh::map<sh::string, bool> windows;
     
     sh::vector<IObserver*> observers;
 
@@ -52,12 +49,8 @@ public:
     void setPollution(float hum);
     float getPollution() const;
 
-    void doors_sim();
-    void windows_sim();
-    bool isDoorOpen(const sh::string& doorName) const;
-    void setDoorState(const sh::string& doorName, bool open);
-    bool isWindowOpen(const sh::string& windowName) const;
-    void setWindowState(const sh::string& windowName, bool open);
+    int getRandomDoorState() const;
+    int getRandomWindowState() const;
 
     bool simulateMovement() const;
 

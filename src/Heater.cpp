@@ -1,7 +1,7 @@
 #include "Heater.hpp"
 
-Heater::Heater(const sh::string& n, TemperatureSensor* tSensor, float target)
-    : Actuator(n), sensor(tSensor), targetTemp(target) 
+Heater::Heater(const sh::string& n, TemperatureSensor* temperatureSensor, float target)
+    : Actuator(n), sensor(temperatureSensor), targetTemp(target) 
 {
     sensor->addObserver(this);
 }

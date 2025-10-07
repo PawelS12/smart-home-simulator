@@ -2,26 +2,32 @@
 #include "Environment.hpp"
 #include "WindowMotor.hpp"
 
-WindowMotor::WindowMotor(const sh::string& n, Environment* env, const sh::string& window)
-    : Actuator(n), environment(env), windowName(window), position(0) {}
+WindowMotor::WindowMotor(const sh::string& n, WindowSensor* windowSensor)
+    : Actuator(n), windowSensor(windowSensor) 
+{
+    windowSensor->addObserver(this);
+}
 
 void WindowMotor::activate() {
     active = true;
-    position = 100; 
-    environment->setWindowState(windowName, true);
 }
 
 void WindowMotor::deactivate() {
     active = false;
-    position = 0;  
-    environment->setWindowState(windowName, false);
 }
 
-void WindowMotor::setPosition(int pos) {
-    position = sh::min(sh::max(pos, 0), 100);
-    environment->setWindowState(windowName, position > 0);
+sh::string WindowMotor::toLogString() const {
+    return "Window Lock state: " + sh::string(isActive() ? "OPEN" : "CLOSED");
 }
 
-int WindowMotor::getPosition() const {
-    return position;
+void WindowMotor::onNotify() {
+    if (windowSensor->isOpenNow()) {
+        deactivate();
+    } else {
+        activate();
+    }
+}
+
+void WindowMotor::showStatus() const {
+    sh::cout << "[" << name << "] State: " << (active ? "OPEN" : "CLOSED") << sh::endl;
 }

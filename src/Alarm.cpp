@@ -2,8 +2,8 @@
 #include "Environment.hpp"
 #include "Alarm.hpp"
 
-Alarm::Alarm(const sh::string& n, TemperatureSensor* tempSensor, HumiditySensor* humSensor, PollutionSensor* pollSensor) 
-    : Actuator(n), temperatureSensor(tempSensor), humiditySensor(humSensor), pollutionSensor(pollSensor) 
+Alarm::Alarm(const sh::string& n, TemperatureSensor* temperatureSensor, HumiditySensor* humiditySensor, PollutionSensor* pollutionSensor) 
+    : Actuator(n), temperatureSensor(temperatureSensor), humiditySensor(humiditySensor), pollutionSensor(pollutionSensor) 
 {
     temperatureSensor->addObserver(this);
     humiditySensor->addObserver(this);
@@ -19,7 +19,7 @@ void Alarm::deactivate() {
 }
 
 sh::string Alarm::toLogString() const {
-    return sh::string(isActive() ? "ON" : "OFF");
+    return "Alarm state: " + sh::string(isActive() ? "ON" : "OFF");
 }
 
 void Alarm::onNotify() {

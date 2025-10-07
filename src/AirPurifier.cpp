@@ -1,8 +1,8 @@
 #include "Actuator.hpp"
 #include "AirPurifier.hpp"
 
-AirPurifier::AirPurifier(const sh::string& n, HumiditySensor* hSensor, PollutionSensor* pSensor)
-    : Actuator(n), humiditySensor(hSensor), pollutionSensor(pSensor), mode(Mode::OFF) 
+AirPurifier::AirPurifier(const sh::string& n, HumiditySensor* humiditySensor, PollutionSensor* pollutionSensor)
+    : Actuator(n), humiditySensor(humiditySensor), pollutionSensor(pollutionSensor), mode(Mode::OFF) 
 {
     humiditySensor->addObserver(this);
     pollutionSensor->addObserver(this);
