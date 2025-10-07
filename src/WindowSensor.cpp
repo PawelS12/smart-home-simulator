@@ -1,7 +1,7 @@
 #include "WindowSensor.hpp"
 
-WindowSensor::WindowSensor(const sh::string& name, Environment* env, const sh::string& window) 
-    : Sensor(name), environment(env), windowName(window)
+WindowSensor::WindowSensor(const sh::string& name, Environment* env) 
+    : Sensor(name), environment(env)
 {
     environment->addObserver(this);
 }

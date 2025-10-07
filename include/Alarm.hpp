@@ -1,18 +1,24 @@
 #pragma once
 
 #include "Actuator.hpp"
-#include "Environment.hpp"
+#include "TemperatureSensor.hpp"
+#include "HumiditySensor.hpp"
+#include "PollutionSensor.hpp"
 
 class Alarm : public Actuator {
 private:
-    Environment* environment;
-    int type; // alarm or message
+    TemperatureSensor* temperatureSensor;
+    HumiditySensor* humiditySensor;
+    PollutionSensor* pollutionSensor;
 
 public:
-    Alarm(const sh::string& name, Environment* env, int type = 0);
+    Alarm(const sh::string& name, TemperatureSensor* tempSensor, HumiditySensor* humSensor, PollutionSensor* pollSensor);
 
     void activate() override;
     void deactivate() override;
-    void setType(int t);
-    int getType() const;
+    
+    void onNotify() override;
+    void showStatus() const override;
+
+    sh::string toLogString() const override;
 };

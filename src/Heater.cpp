@@ -1,7 +1,7 @@
 #include "Heater.hpp"
 
-Heater::Heater(const sh::string& n, TemperatureSensor* s, float target)
-    : Actuator(n), sensor(s), targetTemp(target) 
+Heater::Heater(const sh::string& n, TemperatureSensor* tSensor, float target)
+    : Actuator(n), sensor(tSensor), targetTemp(target) 
 {
     sensor->addObserver(this);
 }
@@ -20,6 +20,10 @@ void Heater::setTargetTemp(float temp) {
 
 float Heater::getTargetTemp() const {
     return targetTemp;
+}
+
+sh::string Heater::toLogString() const {
+    return "Heater state: " + sh::string(isActive() ? "OPEN" : "CLOSED");
 }
 
 void Heater::onNotify() {

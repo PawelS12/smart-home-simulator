@@ -2,22 +2,43 @@
 #include "Environment.hpp"
 #include "Alarm.hpp"
 
-Alarm::Alarm(const sh::string& n, Environment* env, int t) 
-    : Actuator(n), environment(env), type(t) {}
+Alarm::Alarm(const sh::string& n, TemperatureSensor* tempSensor, HumiditySensor* humSensor, PollutionSensor* pollSensor) 
+    : Actuator(n), temperatureSensor(tempSensor), humiditySensor(humSensor), pollutionSensor(pollSensor) 
+{
+    temperatureSensor->addObserver(this);
+    humiditySensor->addObserver(this);
+    pollutionSensor->addObserver(this);
+}
 
 void Alarm::activate() {
     active = true;
-    //
 }
 
 void Alarm::deactivate() {
     active = false;
 }
 
-void Alarm::setType(int t) {
-    type = t;
+sh::string Alarm::toLogString() const {
+    return sh::string(isActive() ? "ON" : "OFF");
 }
 
-int Alarm::getType() const {
-    return type;
+void Alarm::onNotify() {
+    float currentTemp = temperatureSensor->getRawValue();
+    float currentHumidity = humiditySensor->getRawValue();
+    float currentPollution = pollutionSensor->getRawValue();
+
+    if (currentTemp >= 35.0f || currentHumidity >= 80.0f || currentPollution >= 70.0f) {
+        activate();
+    } else {
+        deactivate();
+    }
+}
+
+void Alarm::showStatus() const {
+    sh::cout << "[" << name << "] State: " 
+             << (isActive() ? "ON" : "OFF")
+             << " (Temperature: " << temperatureSensor->getRawValue() << "C"
+             << ", Humidity: " << humiditySensor->getRawValue() << "%"
+             << ", Pollution: " << pollutionSensor->getRawValue() << "%)"
+             << sh::endl;
 }

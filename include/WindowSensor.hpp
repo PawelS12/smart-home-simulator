@@ -13,7 +13,7 @@ private:
     sh::vector<IObserver*> observers;
 
 public:
-    WindowSensor(const sh::string& sensorName, Environment* env, const sh::string& window);
+    WindowSensor(const sh::string& sensorName, Environment* env);
              
     float getRawValue() const override;
     void showStatus() const override;

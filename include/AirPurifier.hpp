@@ -1,18 +1,26 @@
 #pragma once
 
 #include "Actuator.hpp"
-#include "Environment.hpp"
+#include "HumiditySensor.hpp"
+#include "PollutionSensor.hpp"
 
 class AirPurifier : public Actuator {
 private:
-    Environment* environment;
-    int powerLevel;
+    enum class Mode { OFF, PURIFY, DEHUMIDIFY };
+    Mode mode;
+    
+    HumiditySensor* humiditySensor;
+    PollutionSensor* pollutionSensor;
 
 public:
-    AirPurifier(const sh::string& name, Environment* env, int power);
+    AirPurifier(const sh::string& name, HumiditySensor* hSensor, PollutionSensor* pSensor);
     
     void activate() override;
     void deactivate() override;
-    void setPower(int level);
-    int getPower() const;
+    void onNotify() override;
+
+    sh::string toLogString() const override;
+    void showStatus() const override;
+
+    Mode getMode() const;
 };

@@ -13,7 +13,7 @@ private:
     sh::vector<IObserver*> observers;
 
 public:
-    DoorSensor(const sh::string& sensorName, Environment* env, const sh::string& door);
+    DoorSensor(const sh::string& sensorName, Environment* env);
              
     float getRawValue() const override;
     void showStatus() const override;

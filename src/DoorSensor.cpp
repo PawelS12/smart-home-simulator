@@ -1,7 +1,7 @@
 #include "DoorSensor.hpp"
 
-DoorSensor::DoorSensor(const sh::string& name, Environment* env, const sh::string& door) 
-    : Sensor(name), environment(env), doorName(door) 
+DoorSensor::DoorSensor(const sh::string& name, Environment* env) 
+    : Sensor(name), environment(env)
 {
     environment->addObserver(this);
 }

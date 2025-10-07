@@ -11,12 +11,14 @@ private:
     MotionSensor* movementSensor;
 
 public:
-    Light(const sh::string& name, LightSensor* lSensor, MotionSensor* mSensor);
+    Light(const sh::string& name, LightSensor* lightSensor, MotionSensor* movementSensor);
     
     void activate() override;
     void deactivate() override;
     void setBrightness(int value);
     int getBrightness() const;
+
+    sh::string toLogString() const override;
 
     void onNotify() override;
 };

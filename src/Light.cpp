@@ -23,6 +23,10 @@ int Light::getBrightness() const {
     return brightness;
 }
 
+sh::string Light::toLogString() const {
+    return "Light state: " + sh::string(isActive() ? "OPEN" : "CLOSED");
+}
+
 void Light::onNotify() {
     float currentBrightness = lightSensor->getRawValue();
     bool movementDetected = movementSensor->getRawValue() > 0;
