@@ -1,8 +1,8 @@
-@startuml Smart Home
+@startuml SmartHome
+
 class Device
 class Sensor
 class Actuator
-class Environment
 
 Device <|-- Sensor
 Sensor <|-- TemperatureSensor
@@ -13,7 +13,7 @@ Sensor <|-- HumiditySensor
 Sensor <|-- WindowSensor
 Sensor <|-- PollutionSensor
 
-Device <|-- Actuator 
+Device <|-- Actuator
 Actuator <|-- Heater
 Actuator <|-- Light
 Actuator <|-- DoorLock
@@ -24,4 +24,31 @@ Actuator <|-- AirConditioner
 
 Sensor --> Environment
 Actuator --> Environment
+
+class Environment
+class IObserver
+class Observable
+
+IObserver <|.. Sensor
+IObserver <|.. Actuator
+Observable <|-- Environment
+
+Environment "1" *-- "*" IObserver : observers
+
+
+class Room
+Room "1" *-- "*" Sensor : sensors
+Room "1" *-- "*" Actuator : actuators
+Room "1" *-- "1" Environment : env
+
+
+class Logger
+Logger --> Device
+Logger --> Environment
+
+
+class SmartHome
+SmartHome "1" *-- "*" Room : rooms
+SmartHome --> Logger
+
 @enduml
