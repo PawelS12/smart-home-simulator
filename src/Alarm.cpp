@@ -19,7 +19,13 @@ void Alarm::deactivate() {
 }
 
 sh::string Alarm::toLogString() const {
-    return "Alarm state: " + sh::string(isActive() ? "ON" : "OFF");
+    sh::ostringstream ss;
+    ss << "State: " << (isActive() ? "ON" : "OFF")
+       << " (Temperature: " << temperatureSensor->getRawValue() << "C"
+       << ", Humidity: " << humiditySensor->getRawValue() << "%"
+       << ", Pollution: " << pollutionSensor->getRawValue() << "%)";
+       
+    return ss.str();
 }
 
 void Alarm::onNotify() {

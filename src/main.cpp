@@ -54,7 +54,7 @@ int main() {
     sh::cout << bathRoom_env.countObservers() << " sensors in Bath Room." << sh::endl;
     sh::cout << outside_env.countObservers() << " sensors outside." << sh::endl;
 
-    for (int i = 0; i < 20; ++i) {
+    for (int i = 0; i < 24; ++i) {
         salon_env.simulation();
         bathRoom_env.simulation();
         outside_env.simulation();

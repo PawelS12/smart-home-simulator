@@ -16,7 +16,12 @@ void Light::deactivate() {
 }
 
 sh::string Light::toLogString() const {
-    return "Light state: " + sh::string(isActive() ? "OPEN" : "CLOSED");
+    sh::ostringstream ss;
+    ss << "State: " << (isActive() ? "OPEN" : "CLOSED")
+       << " (Brightness: " << lightSensor->getRawValue() << "%"
+       << ", Motion detected: " << (motionSensor->getRawValue() ? "YES" : "NO") << ")";
+
+    return ss.str();
 }
 
 void Light::onNotify() {
@@ -34,6 +39,6 @@ void Light::showStatus() const {
     sh::cout << "[" << name << "]"
              << " State: " << (active ? "OPEN" : "CLOSED")
              << " (Brightness: " << lightSensor->getRawValue() << "%"
-             << ", Motion detected: " << sh::string(motionSensor->getRawValue()  ? "YES" : "NO") << ")"
+             << ", Motion detected: " << (motionSensor->getRawValue()  ? "YES" : "NO") << ")"
              << sh::endl;
 }

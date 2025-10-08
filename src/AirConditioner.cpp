@@ -18,7 +18,14 @@ void AirConditioner::deactivate() {
 }
 
 sh::string AirConditioner::toLogString() const {
-    return "Air Conditioner state: " + sh::string(isActive() ? "OPEN" : "CLOSED");
+    sh::ostringstream ss;
+    ss << "Mode: "
+       << (mode == Mode::COOLING ? "Cooling" :
+           mode == Mode::DRYING ? "Drying" : "Off")
+       << " (Temp: " << temperatureSensor->getRawValue()
+       << "C, Humidity: " << humiditySensor->getRawValue() << "%)";
+       
+    return ss.str();
 }
 
 AirConditioner::Mode AirConditioner::getMode() const {

@@ -21,7 +21,14 @@ AirPurifier::Mode AirPurifier::getMode() const {
 }
 
 sh::string AirPurifier::toLogString() const {
-    return "Air Purifier state: " + sh::string(isActive() ? "ON" : "OFF");
+    sh::ostringstream ss;
+    ss << "Mode: "
+       << (mode == Mode::PURIFY ? "Purifying" :
+           mode == Mode::DEHUMIDIFY ? "Dehumidifying" : "Off")
+       << " (Humidity: " << humiditySensor->getRawValue()
+       << "%, Pollution: " << pollutionSensor->getRawValue() << "%)";
+       
+    return ss.str();
 }
 
 void AirPurifier::onNotify() {

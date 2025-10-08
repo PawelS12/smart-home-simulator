@@ -20,7 +20,19 @@ void WindowMotor::deactivate() {
 }
 
 sh::string WindowMotor::toLogString() const {
-    return "Window Lock state: " + sh::string(isActive() ? "OPEN" : "CLOSED");
+    sh::ostringstream ss;
+    ss << "Mode: "
+       << (mode == Mode::OFF ? "Off" :
+           mode == Mode::VENTILATION ? "Ventilation" :
+           mode == Mode::POLLUTION_PROTECT ? "Pollution Protect" :
+           mode == Mode::HUMIDITY_PROTECT ? "Humidity Protect" :
+           mode == Mode::FIRE_SAFETY ? "Fire Safety" : "Unknown")
+       << " (State: " << (active ? "OPEN" : "CLOSED")
+       << ", Temp: " << temperatureSensor->getRawValue() << "C"
+       << ", Humidity: " << humiditySensor->getRawValue() << "%"
+       << ", Pollution: " << pollutionSensor->getRawValue() << "%)";
+       
+    return ss.str();
 }
 
 void WindowMotor::onNotify() {

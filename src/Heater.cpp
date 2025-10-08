@@ -15,7 +15,11 @@ void Heater::deactivate() {
 }
 
 sh::string Heater::toLogString() const {
-    return "Heater state: " + sh::string(isActive() ? "OPEN" : "CLOSED");
+    sh::ostringstream ss;
+    ss << "State: " << (isActive() ? "OPEN" : "CLOSED")
+       << " (Temp: " << temperatureSensor->getRawValue() << "C)";
+       
+    return ss.str();
 }
 
 void Heater::onNotify() {
