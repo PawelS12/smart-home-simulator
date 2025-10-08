@@ -21,6 +21,7 @@ public:
 
     void addObserver(IObserver* obs);
     void removeObserver(IObserver* obs);
+    const sh::vector<IObserver*>& getObservers() const;
     void notifyObservers();
     int countObservers();
 

@@ -1,95 +1,96 @@
-#include <iostream>
-#include <sstream>
-
+#include "SmartHome.hpp"
+#include "Room.hpp"
 #include "Logger.hpp"
-#include "sh_std.hpp"
-#include "Sensor.hpp"
-#include "TemperatureSensor.hpp" 
-#include "LightSensor.hpp" 
-#include "MotionSensor.hpp" 
-#include "HumiditySensor.hpp" 
-#include "PollutionSensor.hpp" 
-#include "WindowSensor.hpp" 
+#include "Environment.hpp"
+#include "TemperatureSensor.hpp"
+#include "HumiditySensor.hpp"
+#include "LightSensor.hpp"
+#include "MotionSensor.hpp"
 #include "DoorSensor.hpp"
-#include "Light.hpp"
+#include "PollutionSensor.hpp"
+#include "WindowSensor.hpp"
 #include "Heater.hpp"
+#include "Light.hpp"
 #include "AirConditioner.hpp"
 #include "AirPurifier.hpp"
 #include "Alarm.hpp"
 #include "DoorLock.hpp"
 #include "WindowMotor.hpp"
-#include "Environment.hpp"
 
 int main() {
+    SmartHome home("data/log.txt");
 
-    Logger logger("data/log.txt");
-    Environment salon_env, bathRoom_env, outside_env;
+    // -------------------------------
+    // Rooms
+    Room* salon = new Room("Salon");
+    Room* bathRoom = new Room("Bath Room");
+    Room* outside = new Room("Outside");
 
-    // -------------------------------------------------------------------------
-    // Sensors
-    TemperatureSensor temperatureSensor_1("Temperature Sensor Salon", &salon_env);
-    TemperatureSensor temperatureSensor_2("Temperature Sensor Bath Room", &bathRoom_env);
-    MotionSensor motionSensor_1("Motion Sensor Salon", &salon_env);
-    LightSensor lightSensor_1("Light Sensor Salon", &salon_env);
-    DoorSensor doorSensor_1("Door Sensor Salon", &salon_env);
-    HumiditySensor humiditySensor_1("HumiditySensor Bath Room", &bathRoom_env);
-    PollutionSensor pollutionSensor_1("Pollution Sensor Bath Room", &bathRoom_env);
+    // -------------------------------
+    // Sensors - salon
+    TemperatureSensor* tempSalon = new TemperatureSensor("Temperature Sensor Salon", salon->getEnvironment());
+    MotionSensor* motionSalon = new MotionSensor("Motion Sensor Salon", salon->getEnvironment());
+    LightSensor* lightSalon = new LightSensor("Light Sensor Salon", salon->getEnvironment());
+    DoorSensor* doorSalon = new DoorSensor("Door Sensor Salon", salon->getEnvironment());
+    WindowSensor* windowSalon = new WindowSensor("Window Sensor Salon", salon->getEnvironment());
 
-    WindowSensor widnowSensor_1("Window Sensor Salon", &salon_env);
-    TemperatureSensor temperatureSensor_3("Temperature Sensor Outside", &outside_env);
-    HumiditySensor humiditySensor_2("Humidity Sensor Outside", &outside_env);
-    PollutionSensor pollutionSensor_2("Pollution Sensor Outside", &outside_env);
+    // -------------------------------
+    // Sensors - Bath Room
+    TemperatureSensor* tempBath = new TemperatureSensor("Temperature Sensor Bath Room", bathRoom->getEnvironment());
+    HumiditySensor* humidityBath = new HumiditySensor("Humidity Sensor Bath Room", bathRoom->getEnvironment());
+    PollutionSensor* pollutionBath = new PollutionSensor("Pollution Sensor Bath Room", bathRoom->getEnvironment());
 
-    // -------------------------------------------------------------------------
-    // Actuators
-    Heater heater_1("Heater Living Room", &temperatureSensor_1);
-    Light light_1("Light Salon", &lightSensor_1, &motionSensor_1);
-    AirConditioner airConditioner_1("AirConditioner Bath Room", &temperatureSensor_2, &humiditySensor_1);
-    AirPurifier airPurifier_1("Air Purifier Bath Room", &humiditySensor_1, &pollutionSensor_1);
-    Alarm alarm_1("Alarm Bath Room", &temperatureSensor_2, &humiditySensor_1, &pollutionSensor_1);
-    DoorLock doorLock_1("Door Lock Main Door", &doorSensor_1);
-    WindowMotor windowMotor_1("Window Motor Salon window", &widnowSensor_1, &temperatureSensor_3, &humiditySensor_2, &pollutionSensor_2);
+    // -------------------------------
+    // Sensors - Outside
+    TemperatureSensor* tempOutside = new TemperatureSensor("Temperature Sensor Outside", outside->getEnvironment());
+    HumiditySensor* humidityOutside = new HumiditySensor("Humidity Sensor Outside", outside->getEnvironment());
+    PollutionSensor* pollutionOutside = new PollutionSensor("Pollution Sensor Outside", outside->getEnvironment());
 
-    sh::cout << salon_env.countObservers() << " sensors in Salon." << sh::endl;
-    sh::cout << bathRoom_env.countObservers() << " sensors in Bath Room." << sh::endl;
-    sh::cout << outside_env.countObservers() << " sensors outside." << sh::endl;
+    // -------------------------------
+    // Actuators - Salon
+    Heater* heaterSalon = new Heater("Heater Salon", tempSalon);
+    Light* lightSalonAct = new Light("Light Salon", lightSalon, motionSalon);
+    DoorLock* doorLockSalon = new DoorLock("Door Lock Main Door", doorSalon);
+    WindowMotor* windowMotorSalon = new WindowMotor("Window Motor Salon Window", windowSalon, tempOutside, humidityOutside, pollutionOutside);
+
+    // -------------------------------
+    // Actuators - Bath Room
+    AirConditioner* airCondBath = new AirConditioner("AirConditioner Bath Room", tempBath, humidityBath);
+    AirPurifier* airPurifierBath = new AirPurifier("Air Purifier Bath Room", humidityBath, pollutionBath);
+    Alarm* alarmBath = new Alarm("Alarm Bath Room", tempBath, humidityBath, pollutionBath);
+
+
+    salon->addSensor(tempSalon);
+    salon->addSensor(motionSalon);
+    salon->addSensor(lightSalon);
+    salon->addSensor(doorSalon);
+    salon->addSensor(windowSalon);
+    salon->addActuator(heaterSalon);
+    salon->addActuator(lightSalonAct);
+    salon->addActuator(doorLockSalon);
+    salon->addActuator(windowMotorSalon);
+
+    bathRoom->addSensor(tempBath);
+    bathRoom->addSensor(humidityBath);
+    bathRoom->addSensor(pollutionBath);
+    bathRoom->addActuator(airCondBath);
+    bathRoom->addActuator(airPurifierBath);
+    bathRoom->addActuator(alarmBath);
+
+    outside->addSensor(tempOutside);
+    outside->addSensor(humidityOutside);
+    outside->addSensor(pollutionOutside);
+
+   
+    home.addRoom(salon);
+    home.addRoom(bathRoom);
+    home.addRoom(outside);
+
 
     for (int i = 0; i < 24; ++i) {
-        salon_env.simulation();
-        bathRoom_env.simulation();
-        outside_env.simulation();
-        sh::ostringstream frameLog;
-
-        logger.showAndLog(temperatureSensor_1, frameLog, &salon_env);
-        logger.showAndLog(heater_1, frameLog, &salon_env);
-
-        logger.showAndLog(motionSensor_1, frameLog, &salon_env);
-
-        logger.showAndLog(lightSensor_1, frameLog, &salon_env);
-        logger.showAndLog(light_1, frameLog, &salon_env);
-
-        logger.showAndLog(temperatureSensor_2, frameLog, &bathRoom_env);
-        logger.showAndLog(humiditySensor_1, frameLog, &bathRoom_env);
-        logger.showAndLog(airConditioner_1, frameLog, &bathRoom_env);
-
-        logger.showAndLog(pollutionSensor_1, frameLog, &bathRoom_env);
-        logger.showAndLog(airPurifier_1, frameLog, &bathRoom_env);
-
-        logger.showAndLog(alarm_1, frameLog, &bathRoom_env);
-
-        logger.showAndLog(doorSensor_1, frameLog, &salon_env);
-        logger.showAndLog(doorLock_1, frameLog, &salon_env);
-
-        logger.showAndLog(widnowSensor_1, frameLog, &salon_env);
-        logger.showAndLog(temperatureSensor_3, frameLog, &salon_env);
-        logger.showAndLog(humiditySensor_2, frameLog, &salon_env);
-        logger.showAndLog(pollutionSensor_2, frameLog, &salon_env);
-        logger.showAndLog(windowMotor_1, frameLog, &salon_env);
-
-        frameLog << "\n----------------------------\n";
-        logger.log(frameLog.str());
-
-        sh::cout << sh::endl;
+        home.simulate();
+        home.showStatus();
+        home.logStatus();
     }
 
     return 0;

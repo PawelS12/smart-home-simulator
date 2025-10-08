@@ -32,6 +32,10 @@ void Environment::removeObserver(IObserver* obs) {
     observers.erase(sh::remove(observers.begin(), observers.end(), obs), observers.end());
 }
 
+const sh::vector<IObserver*>& Environment::getObservers() const {
+    return observers;
+}
+
 void Environment::notifyObservers() {
     for (auto* obs : observers) {
         obs->onNotify();

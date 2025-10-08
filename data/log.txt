@@ -1,504 +1,720 @@
-[Temperature Sensor Salon] Temperature: 22.037611C (Hour: 13:00)
-[Heater Living Room] State: CLOSED (Temp: 22.0376C) (Hour: 13:00)
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 21.852158C (Hour: 13:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 13:00)
 [Light Sensor Salon] Brightness: 96.592583% (Hour: 13:00)
-[Light Salon] State: CLOSED (Brightness: 96.5926%, Motion detected: NO) (Hour: 13:00)
-[Temperature Sensor Bath Room] Temperature: 21.737375C (Hour: 13:00)
-[HumiditySensor Bath Room] Humidity: 30.000000% (Hour: 13:00)
-[AirConditioner Bath Room] Mode: Off (Temp: 21.7374C, Humidity: 30%) (Hour: 13:00)
-[Pollution Sensor Bath Room] Pollution: 5.942319g/m^3 (Hour: 13:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 30%, Pollution: 5.94232%) (Hour: 13:00)
-[Alarm Bath Room] State: OFF (Temperature: 21.7374C, Humidity: 30%, Pollution: 5.94232%) (Hour: 13:00)
-[Door Sensor Salon] Door state: OPEN (Hour: 13:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 13:00)
+[Door Sensor Salon] Door state: CLOSED (Hour: 13:00)
 [Window Sensor Salon] Window state: CLOSED (Hour: 13:00)
-[Temperature Sensor Outside] Temperature: 22.183458C (Hour: 13:00)
-[Humidity Sensor Outside] Humidity: 30.000000% (Hour: 13:00)
-[Pollution Sensor Outside] Pollution: 18.714298g/m^3 (Hour: 13:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 22.1835C, Humidity: 30%, Pollution: 18.7143%) (Hour: 13:00)
+[Heater Salon] State: OPEN (Temp: 21.8522C) (Hour: 13:00)
+[Light Salon] State: CLOSED (Brightness: 96.5926%, Motion detected: NO) (Hour: 13:00)
+[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 13:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 22.2117C, Humidity: 30%, Pollution: 17.9673%) (Hour: 13:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.550531C (Hour: 14:00)
-[Heater Living Room] State: OPEN (Temp: 21.5505C) (Hour: 14:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.476295C (Hour: 13:00)
+[Humidity Sensor Bath Room] Humidity: 30.000000% (Hour: 13:00)
+[Pollution Sensor Bath Room] Pollution: 15.749959g/m^3 (Hour: 13:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.4763C, Humidity: 30%) (Hour: 13:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 30%, Pollution: 15.75%) (Hour: 13:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.4763C, Humidity: 30%, Pollution: 15.75%) (Hour: 13:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 22.211689C (Hour: 13:00)
+[Humidity Sensor Outside] Humidity: 30.000000% (Hour: 13:00)
+[Pollution Sensor Outside] Pollution: 17.967348g/m^3 (Hour: 13:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 21.609186C (Hour: 14:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 14:00)
 [Light Sensor Salon] Brightness: 86.602539% (Hour: 14:00)
+[Door Sensor Salon] Door state: OPEN (Hour: 14:00)
+[Window Sensor Salon] Window state: CLOSED (Hour: 14:00)
+[Heater Salon] State: OPEN (Temp: 21.6092C) (Hour: 14:00)
 [Light Salon] State: CLOSED (Brightness: 86.6025%, Motion detected: NO) (Hour: 14:00)
-[Temperature Sensor Bath Room] Temperature: 22.033018C (Hour: 14:00)
-[HumiditySensor Bath Room] Humidity: 30.234882% (Hour: 14:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 22.033C, Humidity: 30.2349%) (Hour: 14:00)
-[Pollution Sensor Bath Room] Pollution: 15.016010g/m^3 (Hour: 14:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 30.2349%, Pollution: 15.016%) (Hour: 14:00)
-[Alarm Bath Room] State: OFF (Temperature: 22.033C, Humidity: 30.2349%, Pollution: 15.016%) (Hour: 14:00)
-[Door Sensor Salon] Door state: CLOSED (Hour: 14:00)
-[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 14:00)
-[Window Sensor Salon] Window state: OPEN (Hour: 14:00)
-[Temperature Sensor Outside] Temperature: 22.519876C (Hour: 14:00)
-[Humidity Sensor Outside] Humidity: 30.000000% (Hour: 14:00)
-[Pollution Sensor Outside] Pollution: 14.225569g/m^3 (Hour: 14:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 22.5199C, Humidity: 30%, Pollution: 14.2256%) (Hour: 14:00)
+[Door Lock Main Door] Door Lock state: LOCKED (Hour: 14:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.8857C, Humidity: 30.2237%, Pollution: 6.08431%) (Hour: 14:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.587250C (Hour: 15:00)
-[Heater Living Room] State: OPEN (Temp: 21.5872C) (Hour: 15:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.612026C (Hour: 14:00)
+[Humidity Sensor Bath Room] Humidity: 30.000000% (Hour: 14:00)
+[Pollution Sensor Bath Room] Pollution: 13.270053g/m^3 (Hour: 14:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.612C, Humidity: 30%) (Hour: 14:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 30%, Pollution: 13.2701%) (Hour: 14:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.612C, Humidity: 30%, Pollution: 13.2701%) (Hour: 14:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.885696C (Hour: 14:00)
+[Humidity Sensor Outside] Humidity: 30.223709% (Hour: 14:00)
+[Pollution Sensor Outside] Pollution: 6.084314g/m^3 (Hour: 14:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 21.473335C (Hour: 15:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 15:00)
 [Light Sensor Salon] Brightness: 70.710678% (Hour: 15:00)
-[Light Salon] State: CLOSED (Brightness: 70.7107%, Motion detected: NO) (Hour: 15:00)
-[Temperature Sensor Bath Room] Temperature: 22.388552C (Hour: 15:00)
-[HumiditySensor Bath Room] Humidity: 31.538681% (Hour: 15:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 22.3886C, Humidity: 31.5387%) (Hour: 15:00)
-[Pollution Sensor Bath Room] Pollution: 10.681162g/m^3 (Hour: 15:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 31.5387%, Pollution: 10.6812%) (Hour: 15:00)
-[Alarm Bath Room] State: OFF (Temperature: 22.3886C, Humidity: 31.5387%, Pollution: 10.6812%) (Hour: 15:00)
-[Door Sensor Salon] Door state: OPEN (Hour: 15:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 15:00)
+[Door Sensor Salon] Door state: CLOSED (Hour: 15:00)
 [Window Sensor Salon] Window state: CLOSED (Hour: 15:00)
-[Temperature Sensor Outside] Temperature: 22.920933C (Hour: 15:00)
-[Humidity Sensor Outside] Humidity: 34.305809% (Hour: 15:00)
-[Pollution Sensor Outside] Pollution: 5.134238g/m^3 (Hour: 15:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 22.9209C, Humidity: 34.3058%, Pollution: 5.13424%) (Hour: 15:00)
+[Heater Salon] State: OPEN (Temp: 21.4733C) (Hour: 15:00)
+[Light Salon] State: CLOSED (Brightness: 70.7107%, Motion detected: NO) (Hour: 15:00)
+[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 15:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 22.2524C, Humidity: 32.385%, Pollution: 4.97489%) (Hour: 15:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.232746C (Hour: 16:00)
-[Heater Living Room] State: OPEN (Temp: 21.2327C) (Hour: 16:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.326761C (Hour: 15:00)
+[Humidity Sensor Bath Room] Humidity: 32.522285% (Hour: 15:00)
+[Pollution Sensor Bath Room] Pollution: 17.649937g/m^3 (Hour: 15:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.3268C, Humidity: 32.5223%) (Hour: 15:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 32.5223%, Pollution: 17.6499%) (Hour: 15:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.3268C, Humidity: 32.5223%, Pollution: 17.6499%) (Hour: 15:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 22.252354C (Hour: 15:00)
+[Humidity Sensor Outside] Humidity: 32.385025% (Hour: 15:00)
+[Pollution Sensor Outside] Pollution: 4.974891g/m^3 (Hour: 15:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 21.807249C (Hour: 16:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 16:00)
 [Light Sensor Salon] Brightness: 50.000004% (Hour: 16:00)
-[Light Salon] State: CLOSED (Brightness: 50%, Motion detected: NO) (Hour: 16:00)
-[Temperature Sensor Bath Room] Temperature: 22.778646C (Hour: 16:00)
-[HumiditySensor Bath Room] Humidity: 33.211098% (Hour: 16:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 22.7786C, Humidity: 33.2111%) (Hour: 16:00)
-[Pollution Sensor Bath Room] Pollution: 7.769245g/m^3 (Hour: 16:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 33.2111%, Pollution: 7.76925%) (Hour: 16:00)
-[Alarm Bath Room] State: OFF (Temperature: 22.7786C, Humidity: 33.2111%, Pollution: 7.76925%) (Hour: 16:00)
 [Door Sensor Salon] Door state: OPEN (Hour: 16:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 16:00)
 [Window Sensor Salon] Window state: OPEN (Hour: 16:00)
-[Temperature Sensor Outside] Temperature: 23.147985C (Hour: 16:00)
-[Humidity Sensor Outside] Humidity: 31.663225% (Hour: 16:00)
-[Pollution Sensor Outside] Pollution: 14.018373g/m^3 (Hour: 16:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.148C, Humidity: 31.6632%, Pollution: 14.0184%) (Hour: 16:00)
+[Heater Salon] State: OPEN (Temp: 21.8072C) (Hour: 16:00)
+[Light Salon] State: CLOSED (Brightness: 50%, Motion detected: NO) (Hour: 16:00)
+[Door Lock Main Door] Door Lock state: LOCKED (Hour: 16:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 22.114C, Humidity: 37.1557%, Pollution: 7.30168%) (Hour: 16:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.608286C (Hour: 17:00)
-[Heater Living Room] State: OPEN (Temp: 21.6083C) (Hour: 17:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.111851C (Hour: 16:00)
+[Humidity Sensor Bath Room] Humidity: 30.000000% (Hour: 16:00)
+[Pollution Sensor Bath Room] Pollution: 15.983209g/m^3 (Hour: 16:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.1119C, Humidity: 30%) (Hour: 16:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 30%, Pollution: 15.9832%) (Hour: 16:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.1119C, Humidity: 30%, Pollution: 15.9832%) (Hour: 16:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 22.114029C (Hour: 16:00)
+[Humidity Sensor Outside] Humidity: 37.155720% (Hour: 16:00)
+[Pollution Sensor Outside] Pollution: 7.301681g/m^3 (Hour: 16:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 21.523085C (Hour: 17:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 17:00)
 [Light Sensor Salon] Brightness: 25.881899% (Hour: 17:00)
+[Door Sensor Salon] Door state: OPEN (Hour: 17:00)
+[Window Sensor Salon] Window state: OPEN (Hour: 17:00)
+[Heater Salon] State: OPEN (Temp: 21.5231C) (Hour: 17:00)
 [Light Salon] State: CLOSED (Brightness: 25.8819%, Motion detected: NO) (Hour: 17:00)
-[Temperature Sensor Bath Room] Temperature: 22.319237C (Hour: 17:00)
-[HumiditySensor Bath Room] Humidity: 34.090218% (Hour: 17:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 22.3192C, Humidity: 34.0902%) (Hour: 17:00)
-[Pollution Sensor Bath Room] Pollution: 31.496754g/m^3 (Hour: 17:00)
-[Air Purifier Bath Room] Mode: Purifying (Humidity: 34.0902%, Pollution: 31.4968%) (Hour: 17:00)
-[Alarm Bath Room] State: OFF (Temperature: 22.3192C, Humidity: 34.0902%, Pollution: 31.4968%) (Hour: 17:00)
-[Door Sensor Salon] Door state: CLOSED (Hour: 17:00)
-[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 17:00)
-[Window Sensor Salon] Window state: CLOSED (Hour: 17:00)
-[Temperature Sensor Outside] Temperature: 23.422018C (Hour: 17:00)
-[Humidity Sensor Outside] Humidity: 30.576914% (Hour: 17:00)
-[Pollution Sensor Outside] Pollution: 26.645979g/m^3 (Hour: 17:00)
-[Window Motor Salon window] Mode: Pollution Protect (State: CLOSED, Temp: 23.422C, Humidity: 30.5769%, Pollution: 26.646%) (Hour: 17:00)
+[Door Lock Main Door] Door Lock state: LOCKED (Hour: 17:00)
+[Window Motor Salon Window] Mode: Pollution Protect (State: CLOSED, Temp: 21.8775C, Humidity: 37.2679%, Pollution: 23.3082%) (Hour: 17:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 22.088652C (Hour: 18:00)
-[Heater Living Room] State: CLOSED (Temp: 22.0887C) (Hour: 18:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.223124C (Hour: 17:00)
+[Humidity Sensor Bath Room] Humidity: 33.858395% (Hour: 17:00)
+[Pollution Sensor Bath Room] Pollution: 21.241138g/m^3 (Hour: 17:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.2231C, Humidity: 33.8584%) (Hour: 17:00)
+[Air Purifier Bath Room] Mode: Purifying (Humidity: 33.8584%, Pollution: 21.2411%) (Hour: 17:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.2231C, Humidity: 33.8584%, Pollution: 21.2411%) (Hour: 17:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.877531C (Hour: 17:00)
+[Humidity Sensor Outside] Humidity: 37.267879% (Hour: 17:00)
+[Pollution Sensor Outside] Pollution: 23.308222g/m^3 (Hour: 17:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 21.040379C (Hour: 18:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 18:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 18:00)
-[Light Salon] State: CLOSED (Brightness: 1.22461e-14%, Motion detected: NO) (Hour: 18:00)
-[Temperature Sensor Bath Room] Temperature: 21.908726C (Hour: 18:00)
-[HumiditySensor Bath Room] Humidity: 32.750614% (Hour: 18:00)
-[AirConditioner Bath Room] Mode: Off (Temp: 21.9087C, Humidity: 32.7506%) (Hour: 18:00)
-[Pollution Sensor Bath Room] Pollution: 21.566704g/m^3 (Hour: 18:00)
-[Air Purifier Bath Room] Mode: Purifying (Humidity: 32.7506%, Pollution: 21.5667%) (Hour: 18:00)
-[Alarm Bath Room] State: OFF (Temperature: 21.9087C, Humidity: 32.7506%, Pollution: 21.5667%) (Hour: 18:00)
 [Door Sensor Salon] Door state: CLOSED (Hour: 18:00)
+[Window Sensor Salon] Window state: OPEN (Hour: 18:00)
+[Heater Salon] State: OPEN (Temp: 21.0404C) (Hour: 18:00)
+[Light Salon] State: CLOSED (Brightness: 1.22461e-14%, Motion detected: NO) (Hour: 18:00)
 [Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 18:00)
-[Window Sensor Salon] Window state: CLOSED (Hour: 18:00)
-[Temperature Sensor Outside] Temperature: 23.285900C (Hour: 18:00)
-[Humidity Sensor Outside] Humidity: 31.243677% (Hour: 18:00)
-[Pollution Sensor Outside] Pollution: 37.442787g/m^3 (Hour: 18:00)
-[Window Motor Salon window] Mode: Pollution Protect (State: CLOSED, Temp: 23.2859C, Humidity: 31.2437%, Pollution: 37.4428%) (Hour: 18:00)
+[Window Motor Salon Window] Mode: Pollution Protect (State: CLOSED, Temp: 21.5142C, Humidity: 36.3937%, Pollution: 36.4956%) (Hour: 18:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.730257C (Hour: 19:00)
-[Heater Living Room] State: OPEN (Temp: 21.7303C) (Hour: 19:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.992132C (Hour: 18:00)
+[Humidity Sensor Bath Room] Humidity: 32.196682% (Hour: 18:00)
+[Pollution Sensor Bath Room] Pollution: 29.032772g/m^3 (Hour: 18:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.9921C, Humidity: 32.1967%) (Hour: 18:00)
+[Air Purifier Bath Room] Mode: Purifying (Humidity: 32.1967%, Pollution: 29.0328%) (Hour: 18:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.9921C, Humidity: 32.1967%, Pollution: 29.0328%) (Hour: 18:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.514238C (Hour: 18:00)
+[Humidity Sensor Outside] Humidity: 36.393661% (Hour: 18:00)
+[Pollution Sensor Outside] Pollution: 36.495605g/m^3 (Hour: 18:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 21.482990C (Hour: 19:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 19:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 19:00)
+[Door Sensor Salon] Door state: CLOSED (Hour: 19:00)
+[Window Sensor Salon] Window state: CLOSED (Hour: 19:00)
+[Heater Salon] State: OPEN (Temp: 21.483C) (Hour: 19:00)
 [Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 19:00)
-[Temperature Sensor Bath Room] Temperature: 22.262362C (Hour: 19:00)
-[HumiditySensor Bath Room] Humidity: 34.698601% (Hour: 19:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 22.2624C, Humidity: 34.6986%) (Hour: 19:00)
-[Pollution Sensor Bath Room] Pollution: 35.088802g/m^3 (Hour: 19:00)
-[Air Purifier Bath Room] Mode: Purifying (Humidity: 34.6986%, Pollution: 35.0888%) (Hour: 19:00)
-[Alarm Bath Room] State: OFF (Temperature: 22.2624C, Humidity: 34.6986%, Pollution: 35.0888%) (Hour: 19:00)
-[Door Sensor Salon] Door state: OPEN (Hour: 19:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 19:00)
-[Window Sensor Salon] Window state: OPEN (Hour: 19:00)
-[Temperature Sensor Outside] Temperature: 23.061058C (Hour: 19:00)
-[Humidity Sensor Outside] Humidity: 30.000000% (Hour: 19:00)
-[Pollution Sensor Outside] Pollution: 38.158890g/m^3 (Hour: 19:00)
-[Window Motor Salon window] Mode: Pollution Protect (State: CLOSED, Temp: 23.0611C, Humidity: 30%, Pollution: 38.1589%) (Hour: 19:00)
+[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 19:00)
+[Window Motor Salon Window] Mode: Pollution Protect (State: CLOSED, Temp: 21.3331C, Humidity: 32.471%, Pollution: 22.2698%) (Hour: 19:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 22.180870C (Hour: 20:00)
-[Heater Living Room] State: CLOSED (Temp: 22.1809C) (Hour: 20:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.093754C (Hour: 19:00)
+[Humidity Sensor Bath Room] Humidity: 30.558020% (Hour: 19:00)
+[Pollution Sensor Bath Room] Pollution: 29.870369g/m^3 (Hour: 19:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.0938C, Humidity: 30.558%) (Hour: 19:00)
+[Air Purifier Bath Room] Mode: Purifying (Humidity: 30.558%, Pollution: 29.8704%) (Hour: 19:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.0938C, Humidity: 30.558%, Pollution: 29.8704%) (Hour: 19:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.333126C (Hour: 19:00)
+[Humidity Sensor Outside] Humidity: 32.470951% (Hour: 19:00)
+[Pollution Sensor Outside] Pollution: 22.269823g/m^3 (Hour: 19:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 21.863895C (Hour: 20:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 20:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 20:00)
-[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 20:00)
-[Temperature Sensor Bath Room] Temperature: 22.108315C (Hour: 20:00)
-[HumiditySensor Bath Room] Humidity: 32.460114% (Hour: 20:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 22.1083C, Humidity: 32.4601%) (Hour: 20:00)
-[Pollution Sensor Bath Room] Pollution: 20.995949g/m^3 (Hour: 20:00)
-[Air Purifier Bath Room] Mode: Purifying (Humidity: 32.4601%, Pollution: 20.9959%) (Hour: 20:00)
-[Alarm Bath Room] State: OFF (Temperature: 22.1083C, Humidity: 32.4601%, Pollution: 20.9959%) (Hour: 20:00)
 [Door Sensor Salon] Door state: OPEN (Hour: 20:00)
+[Window Sensor Salon] Window state: CLOSED (Hour: 20:00)
+[Heater Salon] State: OPEN (Temp: 21.8639C) (Hour: 20:00)
+[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 20:00)
 [Door Lock Main Door] Door Lock state: LOCKED (Hour: 20:00)
-[Window Sensor Salon] Window state: OPEN (Hour: 20:00)
-[Temperature Sensor Outside] Temperature: 23.106544C (Hour: 20:00)
-[Humidity Sensor Outside] Humidity: 34.971947% (Hour: 20:00)
-[Pollution Sensor Outside] Pollution: 25.231037g/m^3 (Hour: 20:00)
-[Window Motor Salon window] Mode: Pollution Protect (State: CLOSED, Temp: 23.1065C, Humidity: 34.9719%, Pollution: 25.231%) (Hour: 20:00)
+[Window Motor Salon Window] Mode: Pollution Protect (State: CLOSED, Temp: 21.0776C, Humidity: 35.1893%, Pollution: 29.7633%) (Hour: 20:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 22.141554C (Hour: 21:00)
-[Heater Living Room] State: CLOSED (Temp: 22.1416C) (Hour: 21:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.520859C (Hour: 20:00)
+[Humidity Sensor Bath Room] Humidity: 34.286011% (Hour: 20:00)
+[Pollution Sensor Bath Room] Pollution: 28.985661g/m^3 (Hour: 20:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.5209C, Humidity: 34.286%) (Hour: 20:00)
+[Air Purifier Bath Room] Mode: Purifying (Humidity: 34.286%, Pollution: 28.9857%) (Hour: 20:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.5209C, Humidity: 34.286%, Pollution: 28.9857%) (Hour: 20:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.077610C (Hour: 20:00)
+[Humidity Sensor Outside] Humidity: 35.189289% (Hour: 20:00)
+[Pollution Sensor Outside] Pollution: 29.763317g/m^3 (Hour: 20:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.008343C (Hour: 21:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 21:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 21:00)
+[Door Sensor Salon] Door state: CLOSED (Hour: 21:00)
+[Window Sensor Salon] Window state: OPEN (Hour: 21:00)
+[Heater Salon] State: CLOSED (Temp: 22.0083C) (Hour: 21:00)
 [Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 21:00)
-[Temperature Sensor Bath Room] Temperature: 22.136354C (Hour: 21:00)
-[HumiditySensor Bath Room] Humidity: 30.000000% (Hour: 21:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 22.1364C, Humidity: 30%) (Hour: 21:00)
-[Pollution Sensor Bath Room] Pollution: 1.766624g/m^3 (Hour: 21:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 30%, Pollution: 1.76662%) (Hour: 21:00)
-[Alarm Bath Room] State: OFF (Temperature: 22.1364C, Humidity: 30%, Pollution: 1.76662%) (Hour: 21:00)
-[Door Sensor Salon] Door state: OPEN (Hour: 21:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 21:00)
-[Window Sensor Salon] Window state: CLOSED (Hour: 21:00)
-[Temperature Sensor Outside] Temperature: 23.490908C (Hour: 21:00)
-[Humidity Sensor Outside] Humidity: 31.877317% (Hour: 21:00)
-[Pollution Sensor Outside] Pollution: 17.700516g/m^3 (Hour: 21:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.4909C, Humidity: 31.8773%, Pollution: 17.7005%) (Hour: 21:00)
+[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 21:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.0549C, Humidity: 32.3087%, Pollution: 10.9113%) (Hour: 21:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.876102C (Hour: 22:00)
-[Heater Living Room] State: OPEN (Temp: 21.8761C) (Hour: 22:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.336485C (Hour: 21:00)
+[Humidity Sensor Bath Room] Humidity: 31.376678% (Hour: 21:00)
+[Pollution Sensor Bath Room] Pollution: 1.173043g/m^3 (Hour: 21:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.3365C, Humidity: 31.3767%) (Hour: 21:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 31.3767%, Pollution: 1.17304%) (Hour: 21:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.3365C, Humidity: 31.3767%, Pollution: 1.17304%) (Hour: 21:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.054932C (Hour: 21:00)
+[Humidity Sensor Outside] Humidity: 32.308701% (Hour: 21:00)
+[Pollution Sensor Outside] Pollution: 10.911259g/m^3 (Hour: 21:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 21.998123C (Hour: 22:00)
 [Motion Sensor Salon] Motion detected: YES (Hour: 22:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 22:00)
-[Light Salon] State: OPEN (Brightness: 0%, Motion detected: YES) (Hour: 22:00)
-[Temperature Sensor Bath Room] Temperature: 22.608288C (Hour: 22:00)
-[HumiditySensor Bath Room] Humidity: 34.353180% (Hour: 22:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 22.6083C, Humidity: 34.3532%) (Hour: 22:00)
-[Pollution Sensor Bath Room] Pollution: 5.314919g/m^3 (Hour: 22:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 34.3532%, Pollution: 5.31492%) (Hour: 22:00)
-[Alarm Bath Room] State: OFF (Temperature: 22.6083C, Humidity: 34.3532%, Pollution: 5.31492%) (Hour: 22:00)
-[Door Sensor Salon] Door state: CLOSED (Hour: 22:00)
-[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 22:00)
+[Door Sensor Salon] Door state: OPEN (Hour: 22:00)
 [Window Sensor Salon] Window state: CLOSED (Hour: 22:00)
-[Temperature Sensor Outside] Temperature: 23.289249C (Hour: 22:00)
-[Humidity Sensor Outside] Humidity: 35.821213% (Hour: 22:00)
-[Pollution Sensor Outside] Pollution: 6.699893g/m^3 (Hour: 22:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.2892C, Humidity: 35.8212%, Pollution: 6.69989%) (Hour: 22:00)
+[Heater Salon] State: OPEN (Temp: 21.9981C) (Hour: 22:00)
+[Light Salon] State: OPEN (Brightness: 0%, Motion detected: YES) (Hour: 22:00)
+[Door Lock Main Door] Door Lock state: LOCKED (Hour: 22:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.2376C, Humidity: 30.1653%, Pollution: 1.14369%) (Hour: 22:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 22.029121C (Hour: 23:00)
-[Heater Living Room] State: CLOSED (Temp: 22.0291C) (Hour: 23:00)
-[Motion Sensor Salon] Motion detected: YES (Hour: 23:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.963675C (Hour: 22:00)
+[Humidity Sensor Bath Room] Humidity: 30.942284% (Hour: 22:00)
+[Pollution Sensor Bath Room] Pollution: 8.686518g/m^3 (Hour: 22:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.9637C, Humidity: 30.9423%) (Hour: 22:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 30.9423%, Pollution: 8.68652%) (Hour: 22:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.9637C, Humidity: 30.9423%, Pollution: 8.68652%) (Hour: 22:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.237593C (Hour: 22:00)
+[Humidity Sensor Outside] Humidity: 30.165283% (Hour: 22:00)
+[Pollution Sensor Outside] Pollution: 1.143693g/m^3 (Hour: 22:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.489088C (Hour: 23:00)
+[Motion Sensor Salon] Motion detected: NO (Hour: 23:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 23:00)
-[Light Salon] State: OPEN (Brightness: 0%, Motion detected: YES) (Hour: 23:00)
-[Temperature Sensor Bath Room] Temperature: 22.913589C (Hour: 23:00)
-[HumiditySensor Bath Room] Humidity: 30.000000% (Hour: 23:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 22.9136C, Humidity: 30%) (Hour: 23:00)
-[Pollution Sensor Bath Room] Pollution: 9.947464g/m^3 (Hour: 23:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 30%, Pollution: 9.94746%) (Hour: 23:00)
-[Alarm Bath Room] State: OFF (Temperature: 22.9136C, Humidity: 30%, Pollution: 9.94746%) (Hour: 23:00)
 [Door Sensor Salon] Door state: OPEN (Hour: 23:00)
+[Window Sensor Salon] Window state: OPEN (Hour: 23:00)
+[Heater Salon] State: CLOSED (Temp: 22.4891C) (Hour: 23:00)
+[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 23:00)
 [Door Lock Main Door] Door Lock state: LOCKED (Hour: 23:00)
-[Window Sensor Salon] Window state: CLOSED (Hour: 23:00)
-[Temperature Sensor Outside] Temperature: 22.808220C (Hour: 23:00)
-[Humidity Sensor Outside] Humidity: 40.250938% (Hour: 23:00)
-[Pollution Sensor Outside] Pollution: 3.901975g/m^3 (Hour: 23:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 22.8082C, Humidity: 40.2509%, Pollution: 3.90197%) (Hour: 23:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.3664C, Humidity: 33.5693%, Pollution: 7.48946%) (Hour: 23:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 22.396143C (Hour: 0:00)
-[Heater Living Room] State: CLOSED (Temp: 22.3961C) (Hour: 0:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.144121C (Hour: 23:00)
+[Humidity Sensor Bath Room] Humidity: 33.836239% (Hour: 23:00)
+[Pollution Sensor Bath Room] Pollution: 2.351254g/m^3 (Hour: 23:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.1441C, Humidity: 33.8362%) (Hour: 23:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 33.8362%, Pollution: 2.35125%) (Hour: 23:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.1441C, Humidity: 33.8362%, Pollution: 2.35125%) (Hour: 23:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.366375C (Hour: 23:00)
+[Humidity Sensor Outside] Humidity: 33.569347% (Hour: 23:00)
+[Pollution Sensor Outside] Pollution: 7.489460g/m^3 (Hour: 23:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.609827C (Hour: 0:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 0:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 0:00)
-[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 0:00)
-[Temperature Sensor Bath Room] Temperature: 23.342718C (Hour: 0:00)
-[HumiditySensor Bath Room] Humidity: 30.000000% (Hour: 0:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.3427C, Humidity: 30%) (Hour: 0:00)
-[Pollution Sensor Bath Room] Pollution: 9.830886g/m^3 (Hour: 0:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 30%, Pollution: 9.83089%) (Hour: 0:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.3427C, Humidity: 30%, Pollution: 9.83089%) (Hour: 0:00)
 [Door Sensor Salon] Door state: OPEN (Hour: 0:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 0:00)
 [Window Sensor Salon] Window state: OPEN (Hour: 0:00)
-[Temperature Sensor Outside] Temperature: 22.911921C (Hour: 0:00)
-[Humidity Sensor Outside] Humidity: 36.893017% (Hour: 0:00)
-[Pollution Sensor Outside] Pollution: 5.979878g/m^3 (Hour: 0:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 22.9119C, Humidity: 36.893%, Pollution: 5.97988%) (Hour: 0:00)
+[Heater Salon] State: CLOSED (Temp: 22.6098C) (Hour: 0:00)
+[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 0:00)
+[Door Lock Main Door] Door Lock state: LOCKED (Hour: 0:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 20.8773C, Humidity: 35.8072%, Pollution: 2.09668%) (Hour: 0:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 22.180387C (Hour: 1:00)
-[Heater Living Room] State: CLOSED (Temp: 22.1804C) (Hour: 1:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.803501C (Hour: 0:00)
+[Humidity Sensor Bath Room] Humidity: 30.043900% (Hour: 0:00)
+[Pollution Sensor Bath Room] Pollution: 3.577849g/m^3 (Hour: 0:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.8035C, Humidity: 30.0439%) (Hour: 0:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 30.0439%, Pollution: 3.57785%) (Hour: 0:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.8035C, Humidity: 30.0439%, Pollution: 3.57785%) (Hour: 0:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 20.877321C (Hour: 0:00)
+[Humidity Sensor Outside] Humidity: 35.807156% (Hour: 0:00)
+[Pollution Sensor Outside] Pollution: 2.096681g/m^3 (Hour: 0:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.812056C (Hour: 1:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 1:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 1:00)
-[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 1:00)
-[Temperature Sensor Bath Room] Temperature: 23.787809C (Hour: 1:00)
-[HumiditySensor Bath Room] Humidity: 30.000000% (Hour: 1:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.7878C, Humidity: 30%) (Hour: 1:00)
-[Pollution Sensor Bath Room] Pollution: 11.310234g/m^3 (Hour: 1:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 30%, Pollution: 11.3102%) (Hour: 1:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.7878C, Humidity: 30%, Pollution: 11.3102%) (Hour: 1:00)
 [Door Sensor Salon] Door state: CLOSED (Hour: 1:00)
-[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 1:00)
 [Window Sensor Salon] Window state: OPEN (Hour: 1:00)
-[Temperature Sensor Outside] Temperature: 23.255936C (Hour: 1:00)
-[Humidity Sensor Outside] Humidity: 38.880638% (Hour: 1:00)
-[Pollution Sensor Outside] Pollution: 2.501659g/m^3 (Hour: 1:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.2559C, Humidity: 38.8806%, Pollution: 2.50166%) (Hour: 1:00)
+[Heater Salon] State: CLOSED (Temp: 22.8121C) (Hour: 1:00)
+[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 1:00)
+[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 1:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.0633C, Humidity: 32.5951%, Pollution: 2.94637%) (Hour: 1:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 22.175402C (Hour: 2:00)
-[Heater Living Room] State: CLOSED (Temp: 22.1754C) (Hour: 2:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.917557C (Hour: 1:00)
+[Humidity Sensor Bath Room] Humidity: 30.000000% (Hour: 1:00)
+[Pollution Sensor Bath Room] Pollution: 5.854807g/m^3 (Hour: 1:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.9176C, Humidity: 30%) (Hour: 1:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 30%, Pollution: 5.85481%) (Hour: 1:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.9176C, Humidity: 30%, Pollution: 5.85481%) (Hour: 1:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.063299C (Hour: 1:00)
+[Humidity Sensor Outside] Humidity: 32.595127% (Hour: 1:00)
+[Pollution Sensor Outside] Pollution: 2.946366g/m^3 (Hour: 1:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 23.082357C (Hour: 2:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 2:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 2:00)
-[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 2:00)
-[Temperature Sensor Bath Room] Temperature: 23.704721C (Hour: 2:00)
-[HumiditySensor Bath Room] Humidity: 34.322456% (Hour: 2:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.7047C, Humidity: 34.3225%) (Hour: 2:00)
-[Pollution Sensor Bath Room] Pollution: 6.724743g/m^3 (Hour: 2:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 34.3225%, Pollution: 6.72474%) (Hour: 2:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.7047C, Humidity: 34.3225%, Pollution: 6.72474%) (Hour: 2:00)
 [Door Sensor Salon] Door state: CLOSED (Hour: 2:00)
-[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 2:00)
 [Window Sensor Salon] Window state: OPEN (Hour: 2:00)
-[Temperature Sensor Outside] Temperature: 23.376862C (Hour: 2:00)
-[Humidity Sensor Outside] Humidity: 38.389992% (Hour: 2:00)
-[Pollution Sensor Outside] Pollution: 9.346285g/m^3 (Hour: 2:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.3769C, Humidity: 38.39%, Pollution: 9.34628%) (Hour: 2:00)
+[Heater Salon] State: CLOSED (Temp: 23.0824C) (Hour: 2:00)
+[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 2:00)
+[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 2:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.4228C, Humidity: 32.7817%, Pollution: 3.526%) (Hour: 2:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 22.239704C (Hour: 3:00)
-[Heater Living Room] State: CLOSED (Temp: 22.2397C) (Hour: 3:00)
-[Motion Sensor Salon] Motion detected: NO (Hour: 3:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.791403C (Hour: 2:00)
+[Humidity Sensor Bath Room] Humidity: 33.408943% (Hour: 2:00)
+[Pollution Sensor Bath Room] Pollution: 18.925266g/m^3 (Hour: 2:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.7914C, Humidity: 33.4089%) (Hour: 2:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 33.4089%, Pollution: 18.9253%) (Hour: 2:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.7914C, Humidity: 33.4089%, Pollution: 18.9253%) (Hour: 2:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.422792C (Hour: 2:00)
+[Humidity Sensor Outside] Humidity: 32.781719% (Hour: 2:00)
+[Pollution Sensor Outside] Pollution: 3.525998g/m^3 (Hour: 2:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 23.064920C (Hour: 3:00)
+[Motion Sensor Salon] Motion detected: YES (Hour: 3:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 3:00)
-[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 3:00)
-[Temperature Sensor Bath Room] Temperature: 23.593439C (Hour: 3:00)
-[HumiditySensor Bath Room] Humidity: 33.379108% (Hour: 3:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.5934C, Humidity: 33.3791%) (Hour: 3:00)
-[Pollution Sensor Bath Room] Pollution: 11.456474g/m^3 (Hour: 3:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 33.3791%, Pollution: 11.4565%) (Hour: 3:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.5934C, Humidity: 33.3791%, Pollution: 11.4565%) (Hour: 3:00)
 [Door Sensor Salon] Door state: OPEN (Hour: 3:00)
+[Window Sensor Salon] Window state: OPEN (Hour: 3:00)
+[Heater Salon] State: CLOSED (Temp: 23.0649C) (Hour: 3:00)
+[Light Salon] State: OPEN (Brightness: 0%, Motion detected: YES) (Hour: 3:00)
 [Door Lock Main Door] Door Lock state: LOCKED (Hour: 3:00)
-[Window Sensor Salon] Window state: CLOSED (Hour: 3:00)
-[Temperature Sensor Outside] Temperature: 23.264513C (Hour: 3:00)
-[Humidity Sensor Outside] Humidity: 39.692043% (Hour: 3:00)
-[Pollution Sensor Outside] Pollution: 4.356794g/m^3 (Hour: 3:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.2645C, Humidity: 39.692%, Pollution: 4.35679%) (Hour: 3:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.615C, Humidity: 30.0727%, Pollution: 5.53632%) (Hour: 3:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.917284C (Hour: 4:00)
-[Heater Living Room] State: OPEN (Temp: 21.9173C) (Hour: 4:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.896311C (Hour: 3:00)
+[Humidity Sensor Bath Room] Humidity: 33.632687% (Hour: 3:00)
+[Pollution Sensor Bath Room] Pollution: 15.757512g/m^3 (Hour: 3:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.8963C, Humidity: 33.6327%) (Hour: 3:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 33.6327%, Pollution: 15.7575%) (Hour: 3:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.8963C, Humidity: 33.6327%, Pollution: 15.7575%) (Hour: 3:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.614969C (Hour: 3:00)
+[Humidity Sensor Outside] Humidity: 30.072666% (Hour: 3:00)
+[Pollution Sensor Outside] Pollution: 5.536322g/m^3 (Hour: 3:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 23.011440C (Hour: 4:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 4:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 4:00)
+[Door Sensor Salon] Door state: CLOSED (Hour: 4:00)
+[Window Sensor Salon] Window state: OPEN (Hour: 4:00)
+[Heater Salon] State: CLOSED (Temp: 23.0114C) (Hour: 4:00)
 [Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 4:00)
-[Temperature Sensor Bath Room] Temperature: 23.788370C (Hour: 4:00)
-[HumiditySensor Bath Room] Humidity: 33.407368% (Hour: 4:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.7884C, Humidity: 33.4074%) (Hour: 4:00)
-[Pollution Sensor Bath Room] Pollution: 16.284088g/m^3 (Hour: 4:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 33.4074%, Pollution: 16.2841%) (Hour: 4:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.7884C, Humidity: 33.4074%, Pollution: 16.2841%) (Hour: 4:00)
-[Door Sensor Salon] Door state: OPEN (Hour: 4:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 4:00)
-[Window Sensor Salon] Window state: CLOSED (Hour: 4:00)
-[Temperature Sensor Outside] Temperature: 23.660732C (Hour: 4:00)
-[Humidity Sensor Outside] Humidity: 42.701160% (Hour: 4:00)
-[Pollution Sensor Outside] Pollution: 8.661251g/m^3 (Hour: 4:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.6607C, Humidity: 42.7012%, Pollution: 8.66125%) (Hour: 4:00)
+[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 4:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.5173C, Humidity: 32.7294%, Pollution: 1.11381%) (Hour: 4:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.656799C (Hour: 5:00)
-[Heater Living Room] State: OPEN (Temp: 21.6568C) (Hour: 5:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.596052C (Hour: 4:00)
+[Humidity Sensor Bath Room] Humidity: 35.766930% (Hour: 4:00)
+[Pollution Sensor Bath Room] Pollution: 1.549257g/m^3 (Hour: 4:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.5961C, Humidity: 35.7669%) (Hour: 4:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 35.7669%, Pollution: 1.54926%) (Hour: 4:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.5961C, Humidity: 35.7669%, Pollution: 1.54926%) (Hour: 4:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.517263C (Hour: 4:00)
+[Humidity Sensor Outside] Humidity: 32.729370% (Hour: 4:00)
+[Pollution Sensor Outside] Pollution: 1.113810g/m^3 (Hour: 4:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 23.105103C (Hour: 5:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 5:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 5:00)
-[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 5:00)
-[Temperature Sensor Bath Room] Temperature: 24.155756C (Hour: 5:00)
-[HumiditySensor Bath Room] Humidity: 32.796574% (Hour: 5:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 24.1558C, Humidity: 32.7966%) (Hour: 5:00)
-[Pollution Sensor Bath Room] Pollution: 18.764091g/m^3 (Hour: 5:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 32.7966%, Pollution: 18.7641%) (Hour: 5:00)
-[Alarm Bath Room] State: OFF (Temperature: 24.1558C, Humidity: 32.7966%, Pollution: 18.7641%) (Hour: 5:00)
 [Door Sensor Salon] Door state: OPEN (Hour: 5:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 5:00)
 [Window Sensor Salon] Window state: CLOSED (Hour: 5:00)
-[Temperature Sensor Outside] Temperature: 23.251236C (Hour: 5:00)
-[Humidity Sensor Outside] Humidity: 38.718567% (Hour: 5:00)
-[Pollution Sensor Outside] Pollution: 13.323456g/m^3 (Hour: 5:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.2512C, Humidity: 38.7186%, Pollution: 13.3235%) (Hour: 5:00)
+[Heater Salon] State: CLOSED (Temp: 23.1051C) (Hour: 5:00)
+[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 5:00)
+[Door Lock Main Door] Door Lock state: LOCKED (Hour: 5:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.5932C, Humidity: 35.9488%, Pollution: 10.5256%) (Hour: 5:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.666021C (Hour: 6:00)
-[Heater Living Room] State: OPEN (Temp: 21.666C) (Hour: 6:00)
-[Motion Sensor Salon] Motion detected: YES (Hour: 6:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.743074C (Hour: 5:00)
+[Humidity Sensor Bath Room] Humidity: 38.770218% (Hour: 5:00)
+[Pollution Sensor Bath Room] Pollution: 13.281454g/m^3 (Hour: 5:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.7431C, Humidity: 38.7702%) (Hour: 5:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 38.7702%, Pollution: 13.2815%) (Hour: 5:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.7431C, Humidity: 38.7702%, Pollution: 13.2815%) (Hour: 5:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.593245C (Hour: 5:00)
+[Humidity Sensor Outside] Humidity: 35.948757% (Hour: 5:00)
+[Pollution Sensor Outside] Pollution: 10.525590g/m^3 (Hour: 5:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.793610C (Hour: 6:00)
+[Motion Sensor Salon] Motion detected: NO (Hour: 6:00)
 [Light Sensor Salon] Brightness: 0.000000% (Hour: 6:00)
-[Light Salon] State: OPEN (Brightness: 0%, Motion detected: YES) (Hour: 6:00)
-[Temperature Sensor Bath Room] Temperature: 23.987137C (Hour: 6:00)
-[HumiditySensor Bath Room] Humidity: 30.000000% (Hour: 6:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.9871C, Humidity: 30%) (Hour: 6:00)
-[Pollution Sensor Bath Room] Pollution: 20.353384g/m^3 (Hour: 6:00)
-[Air Purifier Bath Room] Mode: Purifying (Humidity: 30%, Pollution: 20.3534%) (Hour: 6:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.9871C, Humidity: 30%, Pollution: 20.3534%) (Hour: 6:00)
 [Door Sensor Salon] Door state: CLOSED (Hour: 6:00)
+[Window Sensor Salon] Window state: OPEN (Hour: 6:00)
+[Heater Salon] State: CLOSED (Temp: 22.7936C) (Hour: 6:00)
+[Light Salon] State: CLOSED (Brightness: 0%, Motion detected: NO) (Hour: 6:00)
 [Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 6:00)
-[Window Sensor Salon] Window state: CLOSED (Hour: 6:00)
-[Temperature Sensor Outside] Temperature: 23.733065C (Hour: 6:00)
-[Humidity Sensor Outside] Humidity: 43.587761% (Hour: 6:00)
-[Pollution Sensor Outside] Pollution: 31.801094g/m^3 (Hour: 6:00)
-[Window Motor Salon window] Mode: Pollution Protect (State: CLOSED, Temp: 23.7331C, Humidity: 43.5878%, Pollution: 31.8011%) (Hour: 6:00)
+[Window Motor Salon Window] Mode: Pollution Protect (State: CLOSED, Temp: 21.1814C, Humidity: 35.0194%, Pollution: 33.6951%) (Hour: 6:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.303102C (Hour: 7:00)
-[Heater Living Room] State: OPEN (Temp: 21.3031C) (Hour: 7:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.085039C (Hour: 6:00)
+[Humidity Sensor Bath Room] Humidity: 34.234047% (Hour: 6:00)
+[Pollution Sensor Bath Room] Pollution: 28.646732g/m^3 (Hour: 6:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.085C, Humidity: 34.234%) (Hour: 6:00)
+[Air Purifier Bath Room] Mode: Purifying (Humidity: 34.234%, Pollution: 28.6467%) (Hour: 6:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.085C, Humidity: 34.234%, Pollution: 28.6467%) (Hour: 6:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.181431C (Hour: 6:00)
+[Humidity Sensor Outside] Humidity: 35.019436% (Hour: 6:00)
+[Pollution Sensor Outside] Pollution: 33.695145g/m^3 (Hour: 6:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.657244C (Hour: 7:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 7:00)
 [Light Sensor Salon] Brightness: 25.881905% (Hour: 7:00)
+[Door Sensor Salon] Door state: OPEN (Hour: 7:00)
+[Window Sensor Salon] Window state: CLOSED (Hour: 7:00)
+[Heater Salon] State: CLOSED (Temp: 22.6572C) (Hour: 7:00)
 [Light Salon] State: CLOSED (Brightness: 25.8819%, Motion detected: NO) (Hour: 7:00)
-[Temperature Sensor Bath Room] Temperature: 23.841932C (Hour: 7:00)
-[HumiditySensor Bath Room] Humidity: 30.000000% (Hour: 7:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.8419C, Humidity: 30%) (Hour: 7:00)
-[Pollution Sensor Bath Room] Pollution: 24.630379g/m^3 (Hour: 7:00)
-[Air Purifier Bath Room] Mode: Purifying (Humidity: 30%, Pollution: 24.6304%) (Hour: 7:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.8419C, Humidity: 30%, Pollution: 24.6304%) (Hour: 7:00)
-[Door Sensor Salon] Door state: CLOSED (Hour: 7:00)
-[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 7:00)
-[Window Sensor Salon] Window state: OPEN (Hour: 7:00)
-[Temperature Sensor Outside] Temperature: 23.518412C (Hour: 7:00)
-[Humidity Sensor Outside] Humidity: 43.923344% (Hour: 7:00)
-[Pollution Sensor Outside] Pollution: 26.006544g/m^3 (Hour: 7:00)
-[Window Motor Salon window] Mode: Pollution Protect (State: CLOSED, Temp: 23.5184C, Humidity: 43.9233%, Pollution: 26.0065%) (Hour: 7:00)
+[Door Lock Main Door] Door Lock state: LOCKED (Hour: 7:00)
+[Window Motor Salon Window] Mode: Pollution Protect (State: CLOSED, Temp: 21.3819C, Humidity: 30.7246%, Pollution: 27.0292%) (Hour: 7:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.490009C (Hour: 8:00)
-[Heater Living Room] State: OPEN (Temp: 21.49C) (Hour: 8:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.128599C (Hour: 7:00)
+[Humidity Sensor Bath Room] Humidity: 37.925289% (Hour: 7:00)
+[Pollution Sensor Bath Room] Pollution: 30.132416g/m^3 (Hour: 7:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.1286C, Humidity: 37.9253%) (Hour: 7:00)
+[Air Purifier Bath Room] Mode: Purifying (Humidity: 37.9253%, Pollution: 30.1324%) (Hour: 7:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.1286C, Humidity: 37.9253%, Pollution: 30.1324%) (Hour: 7:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.381884C (Hour: 7:00)
+[Humidity Sensor Outside] Humidity: 30.724577% (Hour: 7:00)
+[Pollution Sensor Outside] Pollution: 27.029179g/m^3 (Hour: 7:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.548498C (Hour: 8:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 8:00)
 [Light Sensor Salon] Brightness: 50.000000% (Hour: 8:00)
-[Light Salon] State: CLOSED (Brightness: 50%, Motion detected: NO) (Hour: 8:00)
-[Temperature Sensor Bath Room] Temperature: 23.586809C (Hour: 8:00)
-[HumiditySensor Bath Room] Humidity: 30.000000% (Hour: 8:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.5868C, Humidity: 30%) (Hour: 8:00)
-[Pollution Sensor Bath Room] Pollution: 20.647045g/m^3 (Hour: 8:00)
-[Air Purifier Bath Room] Mode: Purifying (Humidity: 30%, Pollution: 20.647%) (Hour: 8:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.5868C, Humidity: 30%, Pollution: 20.647%) (Hour: 8:00)
-[Door Sensor Salon] Door state: OPEN (Hour: 8:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 8:00)
+[Door Sensor Salon] Door state: CLOSED (Hour: 8:00)
 [Window Sensor Salon] Window state: OPEN (Hour: 8:00)
-[Temperature Sensor Outside] Temperature: 23.313816C (Hour: 8:00)
-[Humidity Sensor Outside] Humidity: 39.876122% (Hour: 8:00)
-[Pollution Sensor Outside] Pollution: 21.196028g/m^3 (Hour: 8:00)
-[Window Motor Salon window] Mode: Pollution Protect (State: CLOSED, Temp: 23.3138C, Humidity: 39.8761%, Pollution: 21.196%) (Hour: 8:00)
+[Heater Salon] State: CLOSED (Temp: 22.5485C) (Hour: 8:00)
+[Light Salon] State: CLOSED (Brightness: 50%, Motion detected: NO) (Hour: 8:00)
+[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 8:00)
+[Window Motor Salon Window] Mode: Pollution Protect (State: CLOSED, Temp: 21.7683C, Humidity: 34.1891%, Pollution: 38.1326%) (Hour: 8:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.333923C (Hour: 9:00)
-[Heater Living Room] State: OPEN (Temp: 21.3339C) (Hour: 9:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.224958C (Hour: 8:00)
+[Humidity Sensor Bath Room] Humidity: 38.546062% (Hour: 8:00)
+[Pollution Sensor Bath Room] Pollution: 20.760666g/m^3 (Hour: 8:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.225C, Humidity: 38.5461%) (Hour: 8:00)
+[Air Purifier Bath Room] Mode: Purifying (Humidity: 38.5461%, Pollution: 20.7607%) (Hour: 8:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.225C, Humidity: 38.5461%, Pollution: 20.7607%) (Hour: 8:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.768345C (Hour: 8:00)
+[Humidity Sensor Outside] Humidity: 34.189072% (Hour: 8:00)
+[Pollution Sensor Outside] Pollution: 38.132599g/m^3 (Hour: 8:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.222092C (Hour: 9:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 9:00)
 [Light Sensor Salon] Brightness: 70.710678% (Hour: 9:00)
-[Light Salon] State: CLOSED (Brightness: 70.7107%, Motion detected: NO) (Hour: 9:00)
-[Temperature Sensor Bath Room] Temperature: 23.830421C (Hour: 9:00)
-[HumiditySensor Bath Room] Humidity: 30.000000% (Hour: 9:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.8304C, Humidity: 30%) (Hour: 9:00)
-[Pollution Sensor Bath Room] Pollution: 23.527828g/m^3 (Hour: 9:00)
-[Air Purifier Bath Room] Mode: Purifying (Humidity: 30%, Pollution: 23.5278%) (Hour: 9:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.8304C, Humidity: 30%, Pollution: 23.5278%) (Hour: 9:00)
-[Door Sensor Salon] Door state: CLOSED (Hour: 9:00)
-[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 9:00)
+[Door Sensor Salon] Door state: OPEN (Hour: 9:00)
 [Window Sensor Salon] Window state: CLOSED (Hour: 9:00)
-[Temperature Sensor Outside] Temperature: 23.807224C (Hour: 9:00)
-[Humidity Sensor Outside] Humidity: 37.825844% (Hour: 9:00)
-[Pollution Sensor Outside] Pollution: 26.447048g/m^3 (Hour: 9:00)
-[Window Motor Salon window] Mode: Pollution Protect (State: CLOSED, Temp: 23.8072C, Humidity: 37.8258%, Pollution: 26.447%) (Hour: 9:00)
+[Heater Salon] State: CLOSED (Temp: 22.2221C) (Hour: 9:00)
+[Light Salon] State: CLOSED (Brightness: 70.7107%, Motion detected: NO) (Hour: 9:00)
+[Door Lock Main Door] Door Lock state: LOCKED (Hour: 9:00)
+[Window Motor Salon Window] Mode: Pollution Protect (State: CLOSED, Temp: 22.2041C, Humidity: 34.6905%, Pollution: 25.8142%) (Hour: 9:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.612616C (Hour: 10:00)
-[Heater Living Room] State: OPEN (Temp: 21.6126C) (Hour: 10:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 22.155064C (Hour: 9:00)
+[Humidity Sensor Bath Room] Humidity: 38.778084% (Hour: 9:00)
+[Pollution Sensor Bath Room] Pollution: 29.048376g/m^3 (Hour: 9:00)
+[AirConditioner Bath Room] Mode: Cooling (Temp: 22.1551C, Humidity: 38.7781%) (Hour: 9:00)
+[Air Purifier Bath Room] Mode: Purifying (Humidity: 38.7781%, Pollution: 29.0484%) (Hour: 9:00)
+[Alarm Bath Room] State: OFF (Temperature: 22.1551C, Humidity: 38.7781%, Pollution: 29.0484%) (Hour: 9:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 22.204063C (Hour: 9:00)
+[Humidity Sensor Outside] Humidity: 34.690506% (Hour: 9:00)
+[Pollution Sensor Outside] Pollution: 25.814190g/m^3 (Hour: 9:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.445248C (Hour: 10:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 10:00)
 [Light Sensor Salon] Brightness: 86.602539% (Hour: 10:00)
-[Light Salon] State: CLOSED (Brightness: 86.6025%, Motion detected: NO) (Hour: 10:00)
-[Temperature Sensor Bath Room] Temperature: 23.944258C (Hour: 10:00)
-[HumiditySensor Bath Room] Humidity: 33.287422% (Hour: 10:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.9443C, Humidity: 33.2874%) (Hour: 10:00)
-[Pollution Sensor Bath Room] Pollution: 7.805982g/m^3 (Hour: 10:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 33.2874%, Pollution: 7.80598%) (Hour: 10:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.9443C, Humidity: 33.2874%, Pollution: 7.80598%) (Hour: 10:00)
 [Door Sensor Salon] Door state: OPEN (Hour: 10:00)
+[Window Sensor Salon] Window state: CLOSED (Hour: 10:00)
+[Heater Salon] State: CLOSED (Temp: 22.4452C) (Hour: 10:00)
+[Light Salon] State: CLOSED (Brightness: 86.6025%, Motion detected: NO) (Hour: 10:00)
 [Door Lock Main Door] Door Lock state: LOCKED (Hour: 10:00)
-[Window Sensor Salon] Window state: OPEN (Hour: 10:00)
-[Temperature Sensor Outside] Temperature: 23.366253C (Hour: 10:00)
-[Humidity Sensor Outside] Humidity: 38.686909% (Hour: 10:00)
-[Pollution Sensor Outside] Pollution: 18.204704g/m^3 (Hour: 10:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.3663C, Humidity: 38.6869%, Pollution: 18.2047%) (Hour: 10:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 22.1493C, Humidity: 36.4072%, Pollution: 19.3668%) (Hour: 10:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.561720C (Hour: 11:00)
-[Heater Living Room] State: OPEN (Temp: 21.5617C) (Hour: 11:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.761286C (Hour: 10:00)
+[Humidity Sensor Bath Room] Humidity: 39.310989% (Hour: 10:00)
+[Pollution Sensor Bath Room] Pollution: 1.576872g/m^3 (Hour: 10:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.7613C, Humidity: 39.311%) (Hour: 10:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 39.311%, Pollution: 1.57687%) (Hour: 10:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.7613C, Humidity: 39.311%, Pollution: 1.57687%) (Hour: 10:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 22.149330C (Hour: 10:00)
+[Humidity Sensor Outside] Humidity: 36.407238% (Hour: 10:00)
+[Pollution Sensor Outside] Pollution: 19.366791g/m^3 (Hour: 10:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.303286C (Hour: 11:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 11:00)
 [Light Sensor Salon] Brightness: 96.592583% (Hour: 11:00)
-[Light Salon] State: CLOSED (Brightness: 96.5926%, Motion detected: NO) (Hour: 11:00)
-[Temperature Sensor Bath Room] Temperature: 23.964615C (Hour: 11:00)
-[HumiditySensor Bath Room] Humidity: 30.683918% (Hour: 11:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.9646C, Humidity: 30.6839%) (Hour: 11:00)
-[Pollution Sensor Bath Room] Pollution: 0.673096g/m^3 (Hour: 11:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 30.6839%, Pollution: 0.673096%) (Hour: 11:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.9646C, Humidity: 30.6839%, Pollution: 0.673096%) (Hour: 11:00)
 [Door Sensor Salon] Door state: OPEN (Hour: 11:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 11:00)
 [Window Sensor Salon] Window state: OPEN (Hour: 11:00)
-[Temperature Sensor Outside] Temperature: 23.199627C (Hour: 11:00)
-[Humidity Sensor Outside] Humidity: 36.094742% (Hour: 11:00)
-[Pollution Sensor Outside] Pollution: 9.241950g/m^3 (Hour: 11:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.1996C, Humidity: 36.0947%, Pollution: 9.24195%) (Hour: 11:00)
+[Heater Salon] State: CLOSED (Temp: 22.3033C) (Hour: 11:00)
+[Light Salon] State: CLOSED (Brightness: 96.5926%, Motion detected: NO) (Hour: 11:00)
+[Door Lock Main Door] Door Lock state: LOCKED (Hour: 11:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.6915C, Humidity: 32.3668%, Pollution: 14.1461%) (Hour: 11:00)
 
 ----------------------------
 
-[Temperature Sensor Salon] Temperature: 21.077316C (Hour: 12:00)
-[Heater Living Room] State: OPEN (Temp: 21.0773C) (Hour: 12:00)
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.331287C (Hour: 11:00)
+[Humidity Sensor Bath Room] Humidity: 41.447975% (Hour: 11:00)
+[Pollution Sensor Bath Room] Pollution: 7.331124g/m^3 (Hour: 11:00)
+[AirConditioner Bath Room] Mode: Drying (Temp: 21.3313C, Humidity: 41.448%) (Hour: 11:00)
+[Air Purifier Bath Room] Mode: Dehumidifying (Humidity: 41.448%, Pollution: 7.33112%) (Hour: 11:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.3313C, Humidity: 41.448%, Pollution: 7.33112%) (Hour: 11:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.691544C (Hour: 11:00)
+[Humidity Sensor Outside] Humidity: 32.366806% (Hour: 11:00)
+[Pollution Sensor Outside] Pollution: 14.146088g/m^3 (Hour: 11:00)
+
+----------------------------
+
+=== Room: Salon ===
+[Temperature Sensor Salon] Temperature: 22.761057C (Hour: 12:00)
 [Motion Sensor Salon] Motion detected: NO (Hour: 12:00)
 [Light Sensor Salon] Brightness: 100.000000% (Hour: 12:00)
-[Light Salon] State: CLOSED (Brightness: 100%, Motion detected: NO) (Hour: 12:00)
-[Temperature Sensor Bath Room] Temperature: 23.563169C (Hour: 12:00)
-[HumiditySensor Bath Room] Humidity: 31.715593% (Hour: 12:00)
-[AirConditioner Bath Room] Mode: Cooling (Temp: 23.5632C, Humidity: 31.7156%) (Hour: 12:00)
-[Pollution Sensor Bath Room] Pollution: 6.672781g/m^3 (Hour: 12:00)
-[Air Purifier Bath Room] Mode: Off (Humidity: 31.7156%, Pollution: 6.67278%) (Hour: 12:00)
-[Alarm Bath Room] State: OFF (Temperature: 23.5632C, Humidity: 31.7156%, Pollution: 6.67278%) (Hour: 12:00)
-[Door Sensor Salon] Door state: OPEN (Hour: 12:00)
-[Door Lock Main Door] Door Lock state: LOCKED (Hour: 12:00)
+[Door Sensor Salon] Door state: CLOSED (Hour: 12:00)
 [Window Sensor Salon] Window state: CLOSED (Hour: 12:00)
-[Temperature Sensor Outside] Temperature: 23.214367C (Hour: 12:00)
-[Humidity Sensor Outside] Humidity: 37.328140% (Hour: 12:00)
-[Pollution Sensor Outside] Pollution: 11.544666g/m^3 (Hour: 12:00)
-[Window Motor Salon window] Mode: Off (State: CLOSED, Temp: 23.2144C, Humidity: 37.3281%, Pollution: 11.5447%) (Hour: 12:00)
+[Heater Salon] State: CLOSED (Temp: 22.7611C) (Hour: 12:00)
+[Light Salon] State: CLOSED (Brightness: 100%, Motion detected: NO) (Hour: 12:00)
+[Door Lock Main Door] Door Lock state: UNLOCKED (Hour: 12:00)
+[Window Motor Salon Window] Mode: Off (State: CLOSED, Temp: 21.7185C, Humidity: 34.0961%, Pollution: 7.80335%) (Hour: 12:00)
+
+----------------------------
+
+=== Room: Bath Room ===
+[Temperature Sensor Bath Room] Temperature: 21.807812C (Hour: 12:00)
+[Humidity Sensor Bath Room] Humidity: 38.549286% (Hour: 12:00)
+[Pollution Sensor Bath Room] Pollution: 17.953054g/m^3 (Hour: 12:00)
+[AirConditioner Bath Room] Mode: Off (Temp: 21.8078C, Humidity: 38.5493%) (Hour: 12:00)
+[Air Purifier Bath Room] Mode: Off (Humidity: 38.5493%, Pollution: 17.9531%) (Hour: 12:00)
+[Alarm Bath Room] State: OFF (Temperature: 21.8078C, Humidity: 38.5493%, Pollution: 17.9531%) (Hour: 12:00)
+
+----------------------------
+
+=== Room: Outside ===
+[Temperature Sensor Outside] Temperature: 21.718533C (Hour: 12:00)
+[Humidity Sensor Outside] Humidity: 34.096107% (Hour: 12:00)
+[Pollution Sensor Outside] Pollution: 7.803354g/m^3 (Hour: 12:00)
 
 ----------------------------
 
