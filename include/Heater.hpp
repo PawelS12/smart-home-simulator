@@ -6,18 +6,16 @@
 
 class Heater : public Actuator {
 private:
-    TemperatureSensor* sensor;
-    float targetTemp;
+    TemperatureSensor* temperatureSensor;
 
 public:
-    Heater(const sh::string& name, TemperatureSensor* temperatureSensor, float target = 22.0f);
+    Heater(const sh::string& name, TemperatureSensor* temperatureSensor);
 
     void activate() override;
     void deactivate() override;
-    void setTargetTemp(float temp);
-    float getTargetTemp() const;
 
     sh::string toLogString() const override;
+    void showStatus() const override;
 
     void onNotify() override;
 };

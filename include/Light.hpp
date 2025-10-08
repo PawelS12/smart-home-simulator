@@ -6,19 +6,17 @@
 
 class Light : public Actuator {
 private:
-    int brightness; 
     LightSensor* lightSensor;
-    MotionSensor* movementSensor;
+    MotionSensor* motionSensor;
 
 public:
-    Light(const sh::string& name, LightSensor* lightSensor, MotionSensor* movementSensor);
+    Light(const sh::string& name, LightSensor* lightSensor, MotionSensor* motionSensor);
     
     void activate() override;
     void deactivate() override;
-    void setBrightness(int value);
-    int getBrightness() const;
 
     sh::string toLogString() const override;
+    void showStatus() const override;
 
     void onNotify() override;
 };

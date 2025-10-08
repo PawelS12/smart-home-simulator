@@ -23,7 +23,7 @@
 int main() {
 
     Logger logger("data/log.txt");
-    Environment salon_env, bathRoom_env;
+    Environment salon_env, bathRoom_env, outside_env;
 
     // -------------------------------------------------------------------------
     // Sensors
@@ -34,24 +34,30 @@ int main() {
     DoorSensor doorSensor_1("Door Sensor Salon", &salon_env);
     HumiditySensor humiditySensor_1("HumiditySensor Bath Room", &bathRoom_env);
     PollutionSensor pollutionSensor_1("Pollution Sensor Bath Room", &bathRoom_env);
+
     WindowSensor widnowSensor_1("Window Sensor Salon", &salon_env);
+    TemperatureSensor temperatureSensor_3("Temperature Sensor Outside", &outside_env);
+    HumiditySensor humiditySensor_2("Humidity Sensor Outside", &outside_env);
+    PollutionSensor pollutionSensor_2("Pollution Sensor Outside", &outside_env);
 
     // -------------------------------------------------------------------------
     // Actuators
-    Heater heater_1("Heater Living Room", &temperatureSensor_1, 22.0f);
+    Heater heater_1("Heater Living Room", &temperatureSensor_1);
     Light light_1("Light Salon", &lightSensor_1, &motionSensor_1);
     AirConditioner airConditioner_1("AirConditioner Bath Room", &temperatureSensor_2, &humiditySensor_1);
     AirPurifier airPurifier_1("Air Purifier Bath Room", &humiditySensor_1, &pollutionSensor_1);
     Alarm alarm_1("Alarm Bath Room", &temperatureSensor_2, &humiditySensor_1, &pollutionSensor_1);
     DoorLock doorLock_1("Door Lock Main Door", &doorSensor_1);
-    WindowMotor windowMotor_1("Window Motor Salon window", &widnowSensor_1);
+    WindowMotor windowMotor_1("Window Motor Salon window", &widnowSensor_1, &temperatureSensor_3, &humiditySensor_2, &pollutionSensor_2);
 
     sh::cout << salon_env.countObservers() << " sensors in Salon." << sh::endl;
     sh::cout << bathRoom_env.countObservers() << " sensors in Bath Room." << sh::endl;
+    sh::cout << outside_env.countObservers() << " sensors outside." << sh::endl;
 
     for (int i = 0; i < 20; ++i) {
         salon_env.simulation();
         bathRoom_env.simulation();
+        outside_env.simulation();
         sh::ostringstream frameLog;
 
         logger.showAndLog(temperatureSensor_1, frameLog, &salon_env);
@@ -75,6 +81,9 @@ int main() {
         logger.showAndLog(doorLock_1, frameLog, &salon_env);
 
         logger.showAndLog(widnowSensor_1, frameLog, &salon_env);
+        logger.showAndLog(temperatureSensor_3, frameLog, &salon_env);
+        logger.showAndLog(humiditySensor_2, frameLog, &salon_env);
+        logger.showAndLog(pollutionSensor_2, frameLog, &salon_env);
         logger.showAndLog(windowMotor_1, frameLog, &salon_env);
 
         frameLog << "\n----------------------------\n";
