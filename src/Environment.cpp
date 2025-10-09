@@ -5,7 +5,8 @@
 #include "sh_std.hpp"
 #include "sh_random.hpp"
 
-Environment::Environment() : temperature(22.0f), hour(12) { }
+Environment::Environment() 
+    : temperature(22.0f), hour(12) { }
 
 void Environment::simulation() {
     time_sim();

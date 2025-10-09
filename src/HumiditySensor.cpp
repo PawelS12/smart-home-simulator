@@ -1,7 +1,7 @@
 #include "HumiditySensor.hpp"
 
-HumiditySensor::HumiditySensor(const sh::string& name, Environment* env) 
-    : Sensor(name), environment(env)
+HumiditySensor::HumiditySensor(const sh::string& name, Environment* environment) 
+    : Sensor(name), environment(environment)
 {
     environment->addObserver(this);
 }

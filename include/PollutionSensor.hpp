@@ -5,6 +5,7 @@
 #include "Observable.hpp"
 
 class PollutionSensor : public Sensor, public Observable {
+private:
     float pollution = 10.0f;
     Environment* environment;
     sh::vector<IObserver*> observers;

@@ -1,6 +1,7 @@
 #include "Sensor.hpp"
 
-Sensor::Sensor(const sh::string& name) : name(name) {}
+Sensor::Sensor(const sh::string& name) 
+    : name(name) {}
 
 sh::string Sensor::getName() const {
     return name;

@@ -13,7 +13,7 @@ private:
     PollutionSensor* pollutionSensor;
 
 public:
-    AirPurifier(const sh::string& name, HumiditySensor* hSensor, PollutionSensor* pSensor);
+    AirPurifier(const sh::string& name, HumiditySensor* humiditySensor, PollutionSensor* pollutionSensor);
     
     void activate() override;
     void deactivate() override;

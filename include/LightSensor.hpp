@@ -11,7 +11,7 @@ private:
     sh::vector<IObserver*> observers;
 
 public:
-    LightSensor(const sh::string& name, Environment* env);
+    LightSensor(const sh::string& name, Environment* environment);
               
     float getRawValue() const override;
     void showStatus() const override;

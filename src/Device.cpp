@@ -7,3 +7,5 @@ Device::Device() {
 Device::~Device() {
     sh::cout << "Device destroyed." << sh::endl;
 }
+
+void Device::update() {}

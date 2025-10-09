@@ -1,6 +1,7 @@
 #include "Actuator.hpp"
 
-Actuator::Actuator(const sh::string& name) : name(name), active(false) {}
+Actuator::Actuator(const sh::string& name) 
+    : name(name), active(false) {}
 
 void Actuator::activate() {
     active = true;

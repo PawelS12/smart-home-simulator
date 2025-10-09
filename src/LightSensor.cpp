@@ -1,8 +1,8 @@
 #include "LightSensor.hpp"
 #include <algorithm>
 
-LightSensor::LightSensor(const sh::string& name, Environment* env) 
-    : Sensor(name), environment(env) 
+LightSensor::LightSensor(const sh::string& name, Environment* environment) 
+    : Sensor(name), environment(environment) 
 {
     environment->addObserver(this);
 }

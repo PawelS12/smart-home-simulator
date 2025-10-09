@@ -11,6 +11,7 @@
 #include <sstream>
 #include <fstream>
 #include <cmath>
+#include <algorithm>
 
 namespace sh {
     using std::string;

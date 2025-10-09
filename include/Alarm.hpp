@@ -12,7 +12,7 @@ private:
     PollutionSensor* pollutionSensor;
 
 public:
-    Alarm(const sh::string& name, TemperatureSensor* tempSensor, HumiditySensor* humSensor, PollutionSensor* pollSensor);
+    Alarm(const sh::string& name, TemperatureSensor* temperatureSensor, HumiditySensor* humiditySensor, PollutionSensor* pollutionSensor);
 
     void activate() override;
     void deactivate() override;

@@ -2,8 +2,8 @@
 
 #include "MotionSensor.hpp"
 
-MotionSensor::MotionSensor(const sh::string& name, Environment* env) 
-    : Sensor(name), environment(env), motionDetected(false) 
+MotionSensor::MotionSensor(const sh::string& name, Environment* environment) 
+    : Sensor(name), environment(environment), motionDetected(false) 
 {
     environment->addObserver(this);
 }

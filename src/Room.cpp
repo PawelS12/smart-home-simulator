@@ -2,11 +2,10 @@
 #include "sh_std.hpp"
 
 Room::Room(const sh::string& roomName)
-    : name(roomName)
-{ }
+    : name(roomName) { }
 
 Environment* Room::getEnvironment() {
-    return &env;
+    return &environment;
 }
 
 const sh::string& Room::getName() const {
@@ -30,7 +29,7 @@ const sh::vector<Actuator*>& Room::getActuators() const {
 }
 
 void Room::simulate() {
-    env.simulation(); 
+    environment.simulation(); 
 }
 
 void Room::showStatus() const {

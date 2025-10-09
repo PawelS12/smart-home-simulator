@@ -5,12 +5,13 @@
 #include "Observable.hpp"
 
 class MotionSensor : public Sensor, public Observable {
+private:
     bool motionDetected;
     Environment* environment;
     sh::vector<IObserver*> observers;
 
 public:
-    MotionSensor(const sh::string& name, Environment* env);
+    MotionSensor(const sh::string& name, Environment* environment);
 
     float getRawValue() const override;
     void showStatus() const override;

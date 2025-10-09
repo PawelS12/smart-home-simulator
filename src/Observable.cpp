@@ -8,7 +8,7 @@ void Observable::addObserver(IObserver* obs) {
 }
 
 void Observable::removeObserver(IObserver* obs) {
-    observers.erase(std::remove(observers.begin(), observers.end(), obs), observers.end());
+    observers.erase(sh::remove(observers.begin(), observers.end(), obs), observers.end());
 }
 
 void Observable::notifyObservers() {

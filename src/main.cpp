@@ -18,6 +18,11 @@
 #include "WindowMotor.hpp"
 
 int main() {
+
+    // -------------------------------
+    // Example smart home   |
+    //                      ↓
+
     SmartHome home("data/log.txt");
 
     // -------------------------------

@@ -2,8 +2,7 @@
 #include "sh_std.hpp"
 
 SmartHome::SmartHome(const sh::string& logFileName)
-    : logger(logFileName)
-{ }
+    : logger(logFileName) { }
 
 void SmartHome::addRoom(Room* room) {
     rooms.push_back(room);

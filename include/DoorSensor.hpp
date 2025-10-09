@@ -10,10 +10,11 @@ private:
     bool isOpen = false;
     sh::string doorName;
     Environment* environment;
+    
     sh::vector<IObserver*> observers;
 
 public:
-    DoorSensor(const sh::string& sensorName, Environment* env);
+    DoorSensor(const sh::string& sensorName, Environment* environment);
              
     float getRawValue() const override;
     void showStatus() const override;

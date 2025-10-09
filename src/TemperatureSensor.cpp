@@ -1,8 +1,8 @@
 #include "TemperatureSensor.hpp"
 #include <algorithm>
 
-TemperatureSensor::TemperatureSensor(const sh::string& name, Environment* env) 
-    : Sensor(name), environment(env) 
+TemperatureSensor::TemperatureSensor(const sh::string& name, Environment* environment) 
+    : Sensor(name), environment(environment) 
 {
     environment->addObserver(this);
 }

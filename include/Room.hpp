@@ -1,4 +1,5 @@
 #pragma once
+
 #include <vector>
 #include <string>
 #include "Environment.hpp"
@@ -8,7 +9,7 @@
 class Room {
 private:
     sh::string name;
-    Environment env;
+    Environment environment;
     sh::vector<Sensor*> sensors;
     sh::vector<Actuator*> actuators;
 

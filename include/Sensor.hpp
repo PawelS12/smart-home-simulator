@@ -11,7 +11,6 @@ public:
     Sensor(const sh::string& name);
 
     virtual ~Sensor() = default;
-
     virtual float getRawValue() const = 0;
 
     void showStatus() const override;
