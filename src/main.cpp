@@ -23,7 +23,7 @@ int main() {
     // Example smart home   |
     //                      ↓
 
-    SmartHome home("../../data/log.txt");
+    SmartHome home("../../results/log.txt");
 
     // -------------------------------
     // Rooms
