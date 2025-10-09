@@ -1,10 +1,12 @@
-// 'sh' namespace - random
+// 'sh' namespace - random & PI
 
 #pragma once
 
 #include <random>
 
 namespace sh {
+    inline constexpr double PI = 3.14159265358979323846;
+    
     inline std::random_device rd;
     inline std::mt19937 gen{rd()};
 

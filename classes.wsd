@@ -39,7 +39,7 @@ Environment "1" *-- "*" IObserver : observers
 class Room
 Room "1" *-- "*" Sensor : sensors
 Room "1" *-- "*" Actuator : actuators
-Room "1" *-- "1" Environment : env
+Room "1" *-- "1" Environment : environment
 
 
 class Logger

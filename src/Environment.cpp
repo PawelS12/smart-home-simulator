@@ -93,7 +93,7 @@ int Environment::getHour() const {
 void Environment::brightness_sim() {
     if (hour >= 6 && hour <= 18) {
         float normalizedHour = (hour - 6) / 12.0f;  
-        brightness = sh::sin(normalizedHour * M_PI) * 100.0f;
+        brightness = sh::sin(normalizedHour * sh::PI) * 100.0f;
     } else {
         brightness = 0.0f; 
     }
